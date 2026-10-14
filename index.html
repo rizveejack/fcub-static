@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>First Capital University of Bangladesh — Where Learners Become Leaders</title>
+  <meta name="description" content="FCUB is the first private university in Khulna Division — five faculties, eight departments, a politics-free academic environment and the lowest tuition with the highest waivers." />
+  <meta property="og:title" content="First Capital University of Bangladesh" />
+  <meta property="og:description" content="Education for Excellence — Be a FCUB Graduate. Where Our Learners Become Leaders." />
+  <meta property="og:site_name" content="First Capital University of Bangladesh" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<!-- ═══════════════ FCUB HEADER (shared partial) ═══════════════ -->
+<header class="fixed inset-x-0 top-0 z-50">
+  <!-- Utility bar -->
+  <div class="utility-bar hidden overflow-hidden bg-forest-deep text-paper/80 md:block">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 text-xs tracking-wide">
+      <div class="flex items-center gap-6">
+        <a href="tel:+8801983278199" class="flex items-center gap-2 transition-colors hover:text-brass-light">
+          <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+          +880 1983 278199
+        </a>
+        <a href="mailto:info@fcub.edu.bd" class="flex items-center gap-2 transition-colors hover:text-brass-light">
+          <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+          info@fcub.edu.bd
+        </a>
+      </div>
+      <div class="flex items-center gap-6">
+        <span class="text-paper/50">Ghoramara, Chuadanga-7200 · Weekly leave: Sun &amp; Mon</span>
+        <span aria-hidden="true" class="h-3 w-px bg-paper/25"></span>
+        <a href="admissions.html" class="font-medium text-brass-light transition-colors hover:text-paper">Admission Open</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main bar -->
+  <div class="main-bar">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+      <!-- Brand -->
+      <a href="index.html" class="group flex items-center gap-3" aria-label="FCUB home">
+        <svg viewBox="0 0 64 72" fill="none" aria-hidden="true" class="brand-crest h-11 w-auto">
+          <path d="M32 2 L58 11 V38 C58 54 47 63 32 70 C17 63 6 54 6 38 V11 Z" fill="currentColor" opacity="0.08"/>
+          <path d="M32 2 L58 11 V38 C58 54 47 63 32 70 C17 63 6 54 6 38 V11 Z" stroke="currentColor" stroke-width="2"/>
+          <path d="M32 7 L54 15 V37.5 C54 51 44.5 59 32 65.5 C19.5 59 10 51 10 37.5 V15 Z" stroke="currentColor" stroke-width="0.75" opacity="0.55"/>
+          <text x="32" y="36" text-anchor="middle" fill="currentColor" style="font-family:'Fraunces',Georgia,serif;font-size:15px;font-weight:600;letter-spacing:1px">FCUB</text>
+          <path d="M20 44 H44" stroke="currentColor" stroke-width="1.25" opacity="0.8"/>
+          <path d="M26 49 H38" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+          <text x="32" y="58" text-anchor="middle" fill="currentColor" opacity="0.75" style="font-family:'Inter',sans-serif;font-size:5px;letter-spacing:2px">CHUADANGA</text>
+        </svg>
+        <span class="flex flex-col leading-none">
+          <span class="brand-title font-display text-[1.15rem] font-semibold tracking-tight sm:text-[1.3rem]">First Capital University</span>
+          <span class="brand-sub eyebrow mt-1 text-[0.55rem] sm:text-[0.6rem]">of Bangladesh · Chuadanga</span>
+        </span>
+      </a>
+
+      <!-- Desktop nav — five entries, secondary pages in dropdowns -->
+      <nav aria-label="Primary" class="hidden items-center gap-6 lg:flex xl:gap-7">
+        <!-- About -->
+        <div class="nav-group relative">
+          <a href="about.html" data-nav="about" data-active="false" aria-haspopup="true" aria-expanded="false"
+             class="link-lux nav-link flex items-center gap-1.5 py-2 whitespace-nowrap text-[0.82rem] font-medium tracking-wide">
+            About
+            <svg class="nav-chevron h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+          <div class="nav-panel absolute top-full left-1/2 z-50 w-72 -translate-x-1/2 pt-2">
+            <div class="border border-ink/10 bg-paper p-2 shadow-[0_24px_60px_rgba(8,33,26,0.18)]">
+              <a href="about.html" class="flex items-center justify-between gap-3 px-4 py-2.5 text-sm text-ink/80 transition-colors hover:bg-forest hover:text-paper">About the University
+                <svg class="h-3.5 w-3.5 shrink-0 opacity-40 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+              <a href="leadership.html" class="flex items-center justify-between gap-3 px-4 py-2.5 text-sm text-ink/80 transition-colors hover:bg-forest hover:text-paper">Leadership &amp; Governance
+                <svg class="h-3.5 w-3.5 shrink-0 opacity-40 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+              <a href="campus-life.html" class="flex items-center justify-between gap-3 px-4 py-2.5 text-sm text-ink/80 transition-colors hover:bg-forest hover:text-paper">Campus Life
+                <svg class="h-3.5 w-3.5 shrink-0 opacity-40 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academics (wide two-column panel) -->
+        <div class="nav-group relative">
+          <a href="academics.html" data-nav="academics" data-active="false" aria-haspopup="true" aria-expanded="false"
+             class="link-lux nav-link flex items-center gap-1.5 py-2 whitespace-nowrap text-[0.82rem] font-medium tracking-wide">
+            Academics
+            <svg class="nav-chevron h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+          <div class="nav-panel absolute top-full left-1/2 z-50 w-[30rem] -translate-x-1/2 pt-2">
+            <div class="grid max-h-[70vh] grid-cols-2 gap-x-1 overflow-y-auto border border-ink/10 bg-paper p-2 shadow-[0_24px_60px_rgba(8,33,26,0.18)]">
+              <a href="academics.html" class="col-span-2 flex items-center justify-between gap-3 border-b border-ink/10 px-4 py-2.5 text-sm font-medium text-forest transition-colors hover:bg-forest hover:text-paper">All Faculties &amp; Departments
+                <svg class="h-3.5 w-3.5 shrink-0 opacity-40 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+              <a href="academics-cse.html" class="flex items-center justify-between gap-3 px-4 py-2.5 text-sm text-ink/80 transition-colors hover:bg-forest hover:text-paper">Computer Science &amp; Engineering
+                <svg class="h-3.5 w-3.5 shrink-0 opacity-40 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+              <a href="academics-eee.html" class="flex items-center justify-between gap-3 px-4 py-2.5 text-sm text-ink/80 transition-colors hover:bg-forest hover:text-paper">Electrical &amp; Electronic Engineering
+                <svg class="h-3.5 w-3.5 shrink-0 opacity-40 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+              <a href="academics-bba.html" class="flex items-center justify-between gap-3 px-4 py-2.5 text-sm text-ink/80 transition-colors hover:bg-forest hover:text-paper">Business Administration
+                <svg class="h-3.5 w-3.5 shrink-0 opacity-40 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+              <a href="academics-public-health.html" class="flex items-center justify-between gap-3 px-4 py-2.5 text-sm text-ink/80 transition-colors hover:bg-forest hover:text-paper">Public Health
+                <svg class="h-3.5 w-3.5 shrink-0 opacity-40 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+              <a href="academics-law.html" class="flex items-center justify-between gap-3 px-4 py-2.5 text-sm text-ink/80 transition-colors hover:bg-forest hover:text-paper">Law
+                <svg class="h-3.5 w-3.5 shrink-0 opacity-40 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+              <a href="academics-english.html" class="flex items-center justify-between gap-3 px-4 py-2.5 text-sm text-ink/80 transition-colors hover:bg-forest hover:text-paper">English
+                <svg class="h-3.5 w-3.5 shrink-0 opacity-40 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+              <a href="academics-sociology.html" class="flex items-center justify-between gap-3 px-4 py-2.5 text-sm text-ink/80 transition-colors hover:bg-forest hover:text-paper">Sociology
+                <svg class="h-3.5 w-3.5 shrink-0 opacity-40 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+              <a href="academics-agriculture.html" class="flex items-center justify-between gap-3 px-4 py-2.5 text-sm text-ink/80 transition-colors hover:bg-forest hover:text-paper">Agriculture
+                <svg class="h-3.5 w-3.5 shrink-0 opacity-40 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Admissions -->
+        <div class="nav-group relative">
+          <a href="admissions.html" data-nav="admissions" data-active="false"
+             class="link-lux nav-link py-2 whitespace-nowrap text-[0.82rem] font-medium tracking-wide">Admissions</a>
+        </div>
+
+        <!-- News & Events -->
+        <div class="nav-group relative">
+          <a href="notices.html" data-nav="news" data-active="false" aria-haspopup="true" aria-expanded="false"
+             class="link-lux nav-link flex items-center gap-1.5 py-2 whitespace-nowrap text-[0.82rem] font-medium tracking-wide">
+            News &amp; Events
+            <svg class="nav-chevron h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+          <div class="nav-panel absolute top-full left-1/2 z-50 w-72 -translate-x-1/2 pt-2">
+            <div class="border border-ink/10 bg-paper p-2 shadow-[0_24px_60px_rgba(8,33,26,0.18)]">
+              <a href="notices.html" class="flex items-center justify-between gap-3 px-4 py-2.5 text-sm text-ink/80 transition-colors hover:bg-forest hover:text-paper">Notices &amp; Circulars
+                <svg class="h-3.5 w-3.5 shrink-0 opacity-40 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+              <a href="events.html" class="flex items-center justify-between gap-3 px-4 py-2.5 text-sm text-ink/80 transition-colors hover:bg-forest hover:text-paper">University Events
+                <svg class="h-3.5 w-3.5 shrink-0 opacity-40 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="nav-group relative">
+          <a href="contact.html" data-nav="contact" data-active="false"
+             class="link-lux nav-link py-2 whitespace-nowrap text-[0.82rem] font-medium tracking-wide">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Actions -->
+      <div class="flex items-center gap-2.5 sm:gap-3">
+        <a href="result.html" title="Verify a certificate by roll number"
+           class="verify-link hidden items-center gap-2 px-4 py-2.5 text-[0.72rem] font-semibold tracking-widest uppercase md:inline-flex">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>
+          Verify Certificate
+        </a>
+
+        <!-- Mobile trigger -->
+        <button type="button" id="menu-open" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"
+                class="menu-button inline-flex h-11 w-11 items-center justify-center lg:hidden">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu — overlay + sliding panel -->
+  <div id="mobile-menu" class="mobile-menu fixed inset-0 z-[60] lg:hidden" aria-hidden="true">
+    <div class="mobile-overlay absolute inset-0 bg-forest-deep/60 backdrop-blur-sm"></div>
+    <aside role="dialog" aria-modal="true" aria-label="Site menu"
+           class="mobile-panel absolute inset-y-0 right-0 flex w-[85vw] max-w-sm flex-col border-l border-ink/10 bg-paper shadow-[0_24px_60px_rgba(8,33,26,0.3)]">
+      <div class="flex items-start justify-between border-b border-ink/10 px-6 py-5">
+        <div>
+          <p class="font-display text-lg text-forest">First Capital University</p>
+          <p class="eyebrow mt-1 text-[0.6rem] text-clay">of Bangladesh · Chuadanga</p>
+        </div>
+        <button type="button" id="menu-close" aria-label="Close menu"
+                class="inline-flex h-10 w-10 items-center justify-center border border-ink/15 text-forest transition-colors hover:bg-forest hover:text-paper">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+
+      <nav aria-label="Mobile" class="flex-1 overflow-y-auto px-6 py-2">
+        <div class="border-b border-ink/10">
+          <!-- About group -->
+          <div class="border-b border-ink/10">
+            <button type="button" class="acc-trigger flex w-full items-center justify-between py-4 font-display text-lg font-medium text-forest" aria-expanded="false">
+              About
+              <svg class="acc-chevron h-4 w-4 text-clay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="acc-panel">
+              <div>
+                <div class="flex flex-col pb-4">
+                  <a href="about.html" class="py-2.5 pl-4 text-sm text-ink/70 transition-colors hover:text-forest">About the University</a>
+                  <a href="leadership.html" class="py-2.5 pl-4 text-sm text-ink/70 transition-colors hover:text-forest">Leadership &amp; Governance</a>
+                  <a href="campus-life.html" class="py-2.5 pl-4 text-sm text-ink/70 transition-colors hover:text-forest">Campus Life</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Academics group -->
+          <div class="border-b border-ink/10">
+            <button type="button" class="acc-trigger flex w-full items-center justify-between py-4 font-display text-lg font-medium text-forest" aria-expanded="false">
+              Academics
+              <svg class="acc-chevron h-4 w-4 text-clay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="acc-panel">
+              <div>
+                <div class="flex flex-col pb-4">
+                  <a href="academics.html" class="py-2.5 pl-4 text-sm text-ink/70 transition-colors hover:text-forest">All Faculties &amp; Departments</a>
+                  <a href="academics-cse.html" class="py-2.5 pl-4 text-sm text-ink/70 transition-colors hover:text-forest">Computer Science &amp; Engineering</a>
+                  <a href="academics-eee.html" class="py-2.5 pl-4 text-sm text-ink/70 transition-colors hover:text-forest">Electrical &amp; Electronic Engineering</a>
+                  <a href="academics-bba.html" class="py-2.5 pl-4 text-sm text-ink/70 transition-colors hover:text-forest">Business Administration</a>
+                  <a href="academics-public-health.html" class="py-2.5 pl-4 text-sm text-ink/70 transition-colors hover:text-forest">Public Health</a>
+                  <a href="academics-law.html" class="py-2.5 pl-4 text-sm text-ink/70 transition-colors hover:text-forest">Law</a>
+                  <a href="academics-english.html" class="py-2.5 pl-4 text-sm text-ink/70 transition-colors hover:text-forest">English</a>
+                  <a href="academics-sociology.html" class="py-2.5 pl-4 text-sm text-ink/70 transition-colors hover:text-forest">Sociology</a>
+                  <a href="academics-agriculture.html" class="py-2.5 pl-4 text-sm text-ink/70 transition-colors hover:text-forest">Agriculture</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Admissions -->
+          <div class="border-b border-ink/10">
+            <a href="admissions.html" class="block py-4 font-display text-lg font-medium transition-colors hover:text-brass text-forest">Admissions</a>
+          </div>
+          <!-- News group -->
+          <div class="border-b border-ink/10">
+            <button type="button" class="acc-trigger flex w-full items-center justify-between py-4 font-display text-lg font-medium text-forest" aria-expanded="false">
+              News &amp; Events
+              <svg class="acc-chevron h-4 w-4 text-clay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="acc-panel">
+              <div>
+                <div class="flex flex-col pb-4">
+                  <a href="notices.html" class="py-2.5 pl-4 text-sm text-ink/70 transition-colors hover:text-forest">Notices &amp; Circulars</a>
+                  <a href="events.html" class="py-2.5 pl-4 text-sm text-ink/70 transition-colors hover:text-forest">University Events</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Contact -->
+          <div class="border-b border-ink/10 last:border-b-0">
+            <a href="contact.html" class="block py-4 font-display text-lg font-medium transition-colors hover:text-brass text-forest">Contact</a>
+          </div>
+        </div>
+
+        <!-- Certificate verification — prominent, employers use it most -->
+        <div class="border-b border-ink/10 py-1.5">
+          <a href="result.html" class="flex items-center gap-3 py-2.5 font-display text-lg font-medium text-brass transition-colors hover:text-forest">
+            <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>
+            Result &amp; Verification
+          </a>
+        </div>
+      </nav>
+
+      <div class="mt-auto space-y-3 px-6 pb-8">
+        <p class="flex items-center justify-center gap-2 text-center text-xs text-clay">
+          <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+          +880 1983 278199 · info@fcub.edu.bd
+        </p>
+      </div>
+    </aside>
+  </div>
+</header>
+
+<main class="page-enter">
+
+<!-- ═══════════════ HOME — page fragment (content inside <main>) ═══════════════ -->
+
+<!-- ═══════════════ Hero ═══════════════ -->
+<section class="relative flex min-h-svh flex-col overflow-hidden bg-forest-deep text-paper">
+  <!-- Backdrop -->
+  <div class="absolute inset-0">
+    <img src="images/hero-campus.jpg" alt="First Capital University of Bangladesh campus at golden hour" class="absolute inset-0 h-full w-full object-cover object-center" />
+    <div class="absolute inset-0 bg-gradient-to-b from-forest-deep/85 via-forest-deep/45 to-forest-deep/90"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-forest-deep/70 via-transparent to-forest-deep/40"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center px-6 pt-40 pb-16">
+    <p class="eyebrow flex animate-fade-up items-center gap-3 text-brass-light" style="animation-delay:0.15s">
+      <span aria-hidden="true" class="h-px w-12 bg-brass"></span>
+      The First Private University in Khulna Division
+    </p>
+
+    <h1 class="mt-6 max-w-4xl animate-fade-up font-display text-[2.7rem] leading-[1.05] font-medium tracking-tight text-balance sm:text-6xl lg:text-[5.2rem]" style="animation-delay:0.3s">
+      Education for Excellence.
+      <br />
+      <span class="display-italic font-light text-brass-light">Where Our Learners</span>
+      <br />
+      Become Leaders.
+    </h1>
+
+    <p class="mt-7 max-w-xl animate-fade-up text-base leading-relaxed text-paper/85 sm:text-lg" style="animation-delay:0.5s">
+      A politics-free academic environment, excellent computer labs, a rich
+      library and full-time faculty — First Capital University of
+      Bangladesh is where ambition finds its address.
+    </p>
+
+    <div class="mt-10 flex animate-fade-up flex-wrap items-center gap-4" style="animation-delay:0.65s">
+      <a href="admissions.html" class="group inline-flex items-center gap-3 bg-brass px-7 py-4 text-[0.8rem] font-semibold tracking-widest text-forest-deep uppercase transition-all duration-300 hover:bg-brass-light">
+        Apply for Admission
+        <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+      <a href="academics.html" class="inline-flex items-center gap-3 border border-paper/30 px-7 py-4 text-[0.8rem] font-semibold tracking-widest uppercase text-paper transition-all duration-300 hover:border-paper hover:bg-paper/10">
+        Explore Academics
+      </a>
+    </div>
+  </div>
+
+  <!-- Stats band -->
+  <div class="relative animate-fade-up" style="animation-delay:0.85s">
+    <div class="mx-auto max-w-7xl px-6 pb-10">
+      <div class="grid grid-cols-2 divide-x divide-paper/10 border-y border-paper/15 bg-forest-deep/40 backdrop-blur-sm lg:grid-cols-4">
+        <div class="px-5 py-6 text-center sm:px-8">
+          <p class="font-display text-3xl font-medium text-brass-light sm:text-4xl">1st</p>
+          <p class="mt-2 text-[0.7rem] leading-snug tracking-wider text-paper/70 uppercase">Private University in Khulna Division</p>
+        </div>
+        <div class="px-5 py-6 text-center sm:px-8">
+          <p class="font-display text-3xl font-medium text-brass-light sm:text-4xl">2000+</p>
+          <p class="mt-2 text-[0.7rem] leading-snug tracking-wider text-paper/70 uppercase">Students Currently Enrolled</p>
+        </div>
+        <div class="px-5 py-6 text-center sm:px-8">
+          <p class="font-display text-3xl font-medium text-brass-light sm:text-4xl">8</p>
+          <p class="mt-2 text-[0.7rem] leading-snug tracking-wider text-paper/70 uppercase">Academic Departments</p>
+        </div>
+        <div class="px-5 py-6 text-center sm:px-8">
+          <p class="font-display text-3xl font-medium text-brass-light sm:text-4xl">5</p>
+          <p class="mt-2 text-[0.7rem] leading-snug tracking-wider text-paper/70 uppercase">Faculties of Study</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Corner ornament -->
+  <div class="pointer-events-none absolute top-28 right-8 hidden text-brass/40 xl:block">
+    <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 18v-7"/><path d="M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M3 22h18"/><path d="M6 18v-7"/></svg>
+  </div>
+</section>
+
+<!-- ═══════════════ Notice Ticker (marquee — all 16 notices, doubled) ═══════════════ -->
+<section aria-label="Notice board" class="relative z-10 border-b border-brass/25 bg-forest text-paper">
+  <div class="mx-auto flex max-w-7xl items-stretch">
+    <div class="hidden shrink-0 items-center gap-2.5 border-r border-brass/25 bg-forest-deep px-6 py-3.5 sm:flex">
+      <svg class="h-4 w-4 text-brass-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"/><path d="M8 6v8"/></svg>
+      <span class="eyebrow text-[0.62rem] whitespace-nowrap text-brass-light">Notice Board</span>
+    </div>
+    <div class="relative flex-1 overflow-hidden py-3.5">
+      <div class="ticker-track flex w-max animate-ticker items-center gap-14 pl-6">
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span class="bg-brass px-1.5 py-0.5 text-[0.6rem] font-bold tracking-widest text-forest-deep uppercase">New</span><span><span class="text-brass-light">Campus Politics Policy Notice</span><span class="mx-2 text-paper/40">—</span>ক্যাম্পাসে রাজনীতি প্রসঙ্গে</span><span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85">Eid-Ul-Fitr Holiday Notice 2024<span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span class="bg-brass px-1.5 py-0.5 text-[0.6rem] font-bold tracking-widest text-forest-deep uppercase">New</span><span><span class="text-brass-light">Merit Scholarship Application Deadline Extended</span><span class="mx-2 text-paper/40">—</span>মেধাবৃত্তির আবেদনের শেষ তারিখ বর্ধিত</span><span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span class="bg-brass px-1.5 py-0.5 text-[0.6rem] font-bold tracking-widest text-forest-deep uppercase">New</span><span><span class="text-brass-light">Mid-Term Examination Routine — All Departments</span><span class="mx-2 text-paper/40">—</span>মধ্যবর্তী পরীক্ষার রুটিন — সকল বিভাগ</span><span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span class="bg-brass px-1.5 py-0.5 text-[0.6rem] font-bold tracking-widest text-forest-deep uppercase">New</span><span><span class="text-brass-light">CSE Final Year Capstone Project Registration</span><span class="mx-2 text-paper/40">—</span>সিএসই ফাইনাল ইয়ার ক্যাপস্টোন প্রজেক্ট রেজিস্ট্রেশন</span><span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span class="bg-brass px-1.5 py-0.5 text-[0.6rem] font-bold tracking-widest text-forest-deep uppercase">New</span><span><span class="text-brass-light">Moot Court Inter-Batch Championship Registration</span><span class="mx-2 text-paper/40">—</span>মুট কোর্ট আন্তঃব্যাচ চ্যাম্পিয়নশিপ রেজিস্ট্রেশন</span><span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span class="bg-brass px-1.5 py-0.5 text-[0.6rem] font-bold tracking-widest text-forest-deep uppercase">New</span><span><span class="text-brass-light">BBA Industry Internship Placement Drive</span><span class="mx-2 text-paper/40">—</span>বিবিএ ইন্ডাস্ট্রি ইন্টার্নশিপ প্লেসমেন্ট ড্রাইভ</span><span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span class="bg-brass px-1.5 py-0.5 text-[0.6rem] font-bold tracking-widest text-forest-deep uppercase">New</span>Agriculture Instructional Farm Rotation Notice<span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85">MPH Field Practice Allocation List<span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span><span class="text-brass-light">Sociology Fieldwork Consent &amp; Ethics Briefing</span><span class="mx-2 text-paper/40">—</span>সমাজবিজ্ঞান ফিল্ডওয়ার্ক নীতিমালা</span><span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85">EEE Laboratory Schedule — Spring Semester<span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85">English Language Lab Sessions — Attendance Policy<span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span class="bg-brass px-1.5 py-0.5 text-[0.6rem] font-bold tracking-widest text-forest-deep uppercase">New</span>Spring Semester Admission Open - limited seats<span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span class="bg-brass px-1.5 py-0.5 text-[0.6rem] font-bold tracking-widest text-forest-deep uppercase">New</span><span><span class="text-brass-light">Recruitment Circular - 2</span><span class="mx-2 text-paper/40">—</span>নিয়োগ বিজ্ঞপ্তি-২</span><span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span><span class="text-brass-light">Recruitment Circular - 1</span><span class="mx-2 text-paper/40">—</span>নিয়োগ বিজ্ঞপ্তি-১</span><span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85">Eid-ul-Azha Holiday Notice 2023<span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span class="bg-brass px-1.5 py-0.5 text-[0.6rem] font-bold tracking-widest text-forest-deep uppercase">New</span><span><span class="text-brass-light">Campus Politics Policy Notice</span><span class="mx-2 text-paper/40">—</span>ক্যাম্পাসে রাজনীতি প্রসঙ্গে</span><span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85">Eid-Ul-Fitr Holiday Notice 2024<span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span class="bg-brass px-1.5 py-0.5 text-[0.6rem] font-bold tracking-widest text-forest-deep uppercase">New</span><span><span class="text-brass-light">Merit Scholarship Application Deadline Extended</span><span class="mx-2 text-paper/40">—</span>মেধাবৃত্তির আবেদনের শেষ তারিখ বর্ধিত</span><span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span class="bg-brass px-1.5 py-0.5 text-[0.6rem] font-bold tracking-widest text-forest-deep uppercase">New</span><span><span class="text-brass-light">Mid-Term Examination Routine — All Departments</span><span class="mx-2 text-paper/40">—</span>মধ্যবর্তী পরীক্ষার রুটিন — সকল বিভাগ</span><span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span class="bg-brass px-1.5 py-0.5 text-[0.6rem] font-bold tracking-widest text-forest-deep uppercase">New</span><span><span class="text-brass-light">CSE Final Year Capstone Project Registration</span><span class="mx-2 text-paper/40">—</span>সিএসই ফাইনাল ইয়ার ক্যাপস্টোন প্রজেক্ট রেজিস্ট্রেশন</span><span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span class="bg-brass px-1.5 py-0.5 text-[0.6rem] font-bold tracking-widest text-forest-deep uppercase">New</span><span><span class="text-brass-light">Moot Court Inter-Batch Championship Registration</span><span class="mx-2 text-paper/40">—</span>মুট কোর্ট আন্তঃব্যাচ চ্যাম্পিয়নশিপ রেজিস্ট্রেশন</span><span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span class="bg-brass px-1.5 py-0.5 text-[0.6rem] font-bold tracking-widest text-forest-deep uppercase">New</span><span><span class="text-brass-light">BBA Industry Internship Placement Drive</span><span class="mx-2 text-paper/40">—</span>বিবিএ ইন্ডাস্ট্রি ইন্টার্নশিপ প্লেসমেন্ট ড্রাইভ</span><span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span class="bg-brass px-1.5 py-0.5 text-[0.6rem] font-bold tracking-widest text-forest-deep uppercase">New</span>Agriculture Instructional Farm Rotation Notice<span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85">MPH Field Practice Allocation List<span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span><span class="text-brass-light">Sociology Fieldwork Consent &amp; Ethics Briefing</span><span class="mx-2 text-paper/40">—</span>সমাজবিজ্ঞান ফিল্ডওয়ার্ক নীতিমালা</span><span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85">EEE Laboratory Schedule — Spring Semester<span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85">English Language Lab Sessions — Attendance Policy<span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span class="bg-brass px-1.5 py-0.5 text-[0.6rem] font-bold tracking-widest text-forest-deep uppercase">New</span>Spring Semester Admission Open - limited seats<span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span class="bg-brass px-1.5 py-0.5 text-[0.6rem] font-bold tracking-widest text-forest-deep uppercase">New</span><span><span class="text-brass-light">Recruitment Circular - 2</span><span class="mx-2 text-paper/40">—</span>নিয়োগ বিজ্ঞপ্তি-২</span><span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85"><span><span class="text-brass-light">Recruitment Circular - 1</span><span class="mx-2 text-paper/40">—</span>নিয়োগ বিজ্ঞপ্তি-১</span><span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+        <span class="flex items-center gap-3 whitespace-nowrap text-sm text-paper/85">Eid-ul-Azha Holiday Notice 2023<span aria-hidden="true" class="ml-11 flex items-center gap-2.5"><span class="h-px w-7 bg-gradient-to-r from-transparent to-brass/60"></span><span class="h-1.5 w-1.5 rotate-45 bg-gradient-to-br from-brass-light to-brass shadow-[0_0_8px_rgba(216,194,132,0.6)]"></span><span class="h-px w-7 bg-gradient-to-l from-transparent to-brass/60"></span></span></span>
+      </div>
+      <div aria-hidden="true" class="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-forest to-transparent"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ About FCUB ═══════════════ -->
+<section id="about" class="relative overflow-hidden bg-paper py-24 sm:py-32">
+  <div class="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-12">
+    <!-- Imagery -->
+    <div class="relative lg:col-span-6">
+      <div class="reveal frame-arch relative z-10">
+        <div class="relative aspect-[4/5] w-[86%] overflow-hidden">
+          <img src="images/library.jpg" alt="The FCUB library — tall oak shelves and brass reading lamps" class="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+        </div>
+      </div>
+      <div class="reveal absolute right-0 bottom-0 z-20 hidden w-[46%] sm:block" style="--reveal-delay:0.2s">
+        <div class="relative aspect-[3/4] overflow-hidden border-8 border-paper shadow-[0_30px_60px_rgba(8,33,26,0.25)]">
+          <img src="images/campus-arch.jpg" alt="Sunlit sandstone arches on the FCUB campus" class="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+        </div>
+      </div>
+      <!-- Floating badge -->
+      <div class="reveal absolute top-6 right-2 z-30 hidden lg:block" style="--reveal-delay:0.35s">
+        <div class="flex items-center gap-3 border border-brass/40 bg-forest px-5 py-4 text-paper shadow-xl">
+          <svg class="h-6 w-6 text-brass-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>
+          <div class="leading-tight">
+            <p class="font-display text-lg">Est. in Khulna Division</p>
+            <p class="text-[0.65rem] tracking-widest text-paper/60 uppercase">First &amp; Finest</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copy -->
+    <div class="lg:col-span-6 lg:pl-8">
+      <div class="reveal">
+        <span class="eyebrow inline-flex items-center gap-3 text-brass"><span aria-hidden="true" class="h-px w-10 bg-brass"></span>About FCUB</span>
+        <h2 class="mt-5 font-display text-4xl leading-[1.08] font-medium tracking-tight text-forest sm:text-5xl">
+          Our Campus, <span class="display-italic font-light text-brass">Our Pride.</span>
+        </h2>
+      </div>
+
+      <div class="reveal" style="--reveal-delay:0.1s">
+        <p class="mt-7 text-[1.05rem] leading-relaxed text-ink/75">
+          <strong class="font-semibold text-forest">First Capital University of Bangladesh (FCUB)</strong> is
+          the first private university in Khulna Division — built around
+          excellent computer labs, a rich library, spacious and
+          well-ventilated classrooms, and a congenial, politics-free
+          academic environment where highly educated and experienced
+          teachers are available full-time.
+        </p>
+        <p class="mt-5 leading-relaxed text-ink/70">
+          At present the university runs five faculties — <em class="font-display text-forest">Science &amp; Engineering Technology, Law, Business Administration, Arts &amp; Social Science,</em> and <em class="font-display text-forest">Agriculture</em> — shaping more than two thousand students into the leaders of tomorrow.
+        </p>
+      </div>
+
+      <div class="reveal" style="--reveal-delay:0.2s">
+        <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+          <li class="flex items-start gap-3 text-sm text-ink/80"><span aria-hidden="true" class="mt-1.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Excellent computer labs &amp; rich library</li>
+          <li class="flex items-start gap-3 text-sm text-ink/80"><span aria-hidden="true" class="mt-1.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Spacious, well-ventilated classrooms</li>
+          <li class="flex items-start gap-3 text-sm text-ink/80"><span aria-hidden="true" class="mt-1.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Politics-free academic environment</li>
+          <li class="flex items-start gap-3 text-sm text-ink/80"><span aria-hidden="true" class="mt-1.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Full-time, highly educated faculty</li>
+        </ul>
+      </div>
+
+      <div class="reveal" style="--reveal-delay:0.3s">
+        <blockquote class="mt-10 border-l-2 border-brass pl-6">
+          <p class="font-display text-xl leading-snug text-forest italic">“Be a FCUB Graduate — where our learners become leaders.”</p>
+          <footer class="eyebrow mt-3 text-[0.62rem] text-clay">
+            The FCUB Promise
+          </footer>
+        </blockquote>
+      </div>
+
+      <div class="reveal" style="--reveal-delay:0.4s">
+        <a href="admissions.html" class="group mt-10 inline-flex items-center gap-3 border-b-2 border-forest pb-1.5 text-[0.8rem] font-semibold tracking-widest text-forest uppercase transition-colors hover:border-brass hover:text-brass">
+          Discover Your Program
+          <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ Notice Board ═══════════════ -->
+<section id="notice-board" aria-labelledby="notice-board-heading" class="border-b border-ink/10 bg-paper-deep py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6">
+    <!-- ── Header row ───────────────────────────────────── -->
+    <div class="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+      <div class="reveal max-w-2xl">
+        <span class="eyebrow inline-flex items-center gap-3 text-brass"><span aria-hidden="true" class="h-px w-10 bg-brass"></span>Registrar&rsquo;s Office</span>
+        <h2 id="notice-board-heading" class="mt-5 font-display text-4xl leading-[1.08] font-medium tracking-tight text-forest sm:text-5xl">
+          Notice <span class="display-italic font-light text-brass">Board</span>
+        </h2>
+        <p class="mt-5 leading-relaxed text-ink/70">
+          Every circular, on record — filter by department.
+        </p>
+      </div>
+      <div class="reveal" style="--reveal-delay:0.12s">
+        <a href="notices.html" class="group inline-flex min-h-11 items-center gap-2 text-[0.72rem] font-semibold tracking-widest text-forest uppercase transition-colors duration-300 hover:text-brass">
+          View all notices
+          <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- ── Department filter chips ──────────────────────── -->
+    <div class="reveal mt-12" style="--reveal-delay:0.15s">
+      <div role="group" aria-label="Filter notices by department" class="flex flex-wrap gap-2" data-filter-group="#notice-board">
+        <button type="button" class="filter-chip inline-flex min-h-11 items-center border px-4 py-2 text-[0.7rem] font-semibold tracking-widest uppercase transition-colors duration-300 border-forest bg-forest text-paper" data-filter="all" aria-pressed="true">All Notices</button>
+        <button type="button" class="filter-chip inline-flex min-h-11 items-center border px-4 py-2 text-[0.7rem] font-semibold tracking-widest uppercase transition-colors duration-300 border-ink/15 bg-transparent text-ink/60 hover:border-brass hover:text-brass" data-filter="Computer Science &amp; Engineering" data-label="CSE" aria-pressed="false" title="Computer Science &amp; Engineering">CSE</button>
+        <button type="button" class="filter-chip inline-flex min-h-11 items-center border px-4 py-2 text-[0.7rem] font-semibold tracking-widest uppercase transition-colors duration-300 border-ink/15 bg-transparent text-ink/60 hover:border-brass hover:text-brass" data-filter="Electrical &amp; Electronic Engineering" data-label="EEE" aria-pressed="false" title="Electrical &amp; Electronic Engineering">EEE</button>
+        <button type="button" class="filter-chip inline-flex min-h-11 items-center border px-4 py-2 text-[0.7rem] font-semibold tracking-widest uppercase transition-colors duration-300 border-ink/15 bg-transparent text-ink/60 hover:border-brass hover:text-brass" data-filter="Business Administration" data-label="Business Admin." aria-pressed="false" title="Business Administration">Business Admin.</button>
+        <button type="button" class="filter-chip inline-flex min-h-11 items-center border px-4 py-2 text-[0.7rem] font-semibold tracking-widest uppercase transition-colors duration-300 border-ink/15 bg-transparent text-ink/60 hover:border-brass hover:text-brass" data-filter="Public Health" data-label="Public Health" aria-pressed="false" title="Public Health">Public Health</button>
+        <button type="button" class="filter-chip inline-flex min-h-11 items-center border px-4 py-2 text-[0.7rem] font-semibold tracking-widest uppercase transition-colors duration-300 border-ink/15 bg-transparent text-ink/60 hover:border-brass hover:text-brass" data-filter="Law" data-label="Law" aria-pressed="false" title="Law">Law</button>
+        <button type="button" class="filter-chip inline-flex min-h-11 items-center border px-4 py-2 text-[0.7rem] font-semibold tracking-widest uppercase transition-colors duration-300 border-ink/15 bg-transparent text-ink/60 hover:border-brass hover:text-brass" data-filter="English" data-label="English" aria-pressed="false" title="English">English</button>
+        <button type="button" class="filter-chip inline-flex min-h-11 items-center border px-4 py-2 text-[0.7rem] font-semibold tracking-widest uppercase transition-colors duration-300 border-ink/15 bg-transparent text-ink/60 hover:border-brass hover:text-brass" data-filter="Sociology" data-label="Sociology" aria-pressed="false" title="Sociology">Sociology</button>
+        <button type="button" class="filter-chip inline-flex min-h-11 items-center border px-4 py-2 text-[0.7rem] font-semibold tracking-widest uppercase transition-colors duration-300 border-ink/15 bg-transparent text-ink/60 hover:border-brass hover:text-brass" data-filter="Agriculture" data-label="Agriculture" aria-pressed="false" title="Agriculture">Agriculture</button>
+      </div>
+    </div>
+
+    <!-- ── Count row ────────────────────────────────────── -->
+    <div class="mt-8 flex flex-wrap items-baseline justify-between gap-2">
+      <p class="eyebrow text-[0.62rem] text-clay">Latest Circulars</p>
+      <p aria-live="polite" class="text-[0.72rem] tracking-widest text-clay uppercase">
+        Showing <span data-count class="font-display text-xl text-forest">6</span> of <span data-total>16</span> notices
+      </p>
+    </div>
+
+    <!-- ── Notice list (all 16 rows; JS shows the first 6 of the filtered set) ── -->
+    <ul class="border-b border-ink/10" aria-label="Latest notices" data-list data-max="6">
+      <li data-dept-row="" class="group border-t border-ink/10 px-4 py-5 transition-colors duration-300 hover:bg-forest sm:px-6">
+        <div class="flex items-start gap-4 sm:gap-6">
+          <!-- Date block -->
+          <div class="w-12 shrink-0 border-r border-ink/10 pr-4 text-center transition-colors duration-300 group-hover:border-paper/20 sm:w-14">
+            <span class="block font-display text-[1.6rem] leading-none text-forest transition-colors duration-300 group-hover:text-paper">10</span>
+            <span class="mt-1.5 block text-[0.58rem] tracking-[0.16em] text-clay uppercase transition-colors duration-300 group-hover:text-paper/60">Apr &rsquo;24</span>
+          </div>
+          <!-- Body -->
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="border border-brass/40 bg-brass-pale/50 px-2 py-0.5 text-[0.58rem] font-bold tracking-widest text-forest uppercase transition-colors duration-300 group-hover:border-brass group-hover:bg-brass group-hover:text-forest-deep">Administration</span>
+              <span class="inline-flex items-center gap-1 text-[0.6rem] font-bold tracking-widest text-brass uppercase transition-colors duration-300 group-hover:text-brass-light">
+                <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                Important
+              </span>
+            </div>
+            <h3 class="mt-2 font-display text-[1.15rem] leading-snug text-forest transition-colors duration-300 group-hover:text-paper">Campus Politics Policy Notice</h3>
+            <p lang="bn" class="mt-1 text-[0.85rem] text-clay transition-colors duration-300 group-hover:text-paper/60">ক্যাম্পাসে রাজনীতি প্রসঙ্গে</p>
+          </div>
+        </div>
+      </li>
+      <li data-dept-row="" class="group border-t border-ink/10 px-4 py-5 transition-colors duration-300 hover:bg-forest sm:px-6">
+        <div class="flex items-start gap-4 sm:gap-6">
+          <div class="w-12 shrink-0 border-r border-ink/10 pr-4 text-center transition-colors duration-300 group-hover:border-paper/20 sm:w-14">
+            <span class="block font-display text-[1.6rem] leading-none text-forest transition-colors duration-300 group-hover:text-paper">06</span>
+            <span class="mt-1.5 block text-[0.58rem] tracking-[0.16em] text-clay uppercase transition-colors duration-300 group-hover:text-paper/60">Apr &rsquo;24</span>
+          </div>
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="border border-brass/40 bg-brass-pale/50 px-2 py-0.5 text-[0.58rem] font-bold tracking-widest text-forest uppercase transition-colors duration-300 group-hover:border-brass group-hover:bg-brass group-hover:text-forest-deep">Holiday</span>
+            </div>
+            <h3 class="mt-2 font-display text-[1.15rem] leading-snug text-forest transition-colors duration-300 group-hover:text-paper">Eid-Ul-Fitr Holiday Notice 2024</h3>
+          </div>
+        </div>
+      </li>
+      <li data-dept-row="" class="group border-t border-ink/10 px-4 py-5 transition-colors duration-300 hover:bg-forest sm:px-6">
+        <div class="flex items-start gap-4 sm:gap-6">
+          <div class="w-12 shrink-0 border-r border-ink/10 pr-4 text-center transition-colors duration-300 group-hover:border-paper/20 sm:w-14">
+            <span class="block font-display text-[1.6rem] leading-none text-forest transition-colors duration-300 group-hover:text-paper">28</span>
+            <span class="mt-1.5 block text-[0.58rem] tracking-[0.16em] text-clay uppercase transition-colors duration-300 group-hover:text-paper/60">Mar &rsquo;24</span>
+          </div>
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="border border-brass/40 bg-brass-pale/50 px-2 py-0.5 text-[0.58rem] font-bold tracking-widest text-forest uppercase transition-colors duration-300 group-hover:border-brass group-hover:bg-brass group-hover:text-forest-deep">Scholarship</span>
+              <span class="inline-flex items-center gap-1 text-[0.6rem] font-bold tracking-widest text-brass uppercase transition-colors duration-300 group-hover:text-brass-light">
+                <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                Important
+              </span>
+            </div>
+            <h3 class="mt-2 font-display text-[1.15rem] leading-snug text-forest transition-colors duration-300 group-hover:text-paper">Merit Scholarship Application Deadline Extended</h3>
+            <p lang="bn" class="mt-1 text-[0.85rem] text-clay transition-colors duration-300 group-hover:text-paper/60">মেধাবৃত্তির আবেদনের শেষ তারিখ বর্ধিত</p>
+          </div>
+        </div>
+      </li>
+      <li data-dept-row="" class="group border-t border-ink/10 px-4 py-5 transition-colors duration-300 hover:bg-forest sm:px-6">
+        <div class="flex items-start gap-4 sm:gap-6">
+          <div class="w-12 shrink-0 border-r border-ink/10 pr-4 text-center transition-colors duration-300 group-hover:border-paper/20 sm:w-14">
+            <span class="block font-display text-[1.6rem] leading-none text-forest transition-colors duration-300 group-hover:text-paper">22</span>
+            <span class="mt-1.5 block text-[0.58rem] tracking-[0.16em] text-clay uppercase transition-colors duration-300 group-hover:text-paper/60">Mar &rsquo;24</span>
+          </div>
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="border border-brass/40 bg-brass-pale/50 px-2 py-0.5 text-[0.58rem] font-bold tracking-widest text-forest uppercase transition-colors duration-300 group-hover:border-brass group-hover:bg-brass group-hover:text-forest-deep">Examination</span>
+              <span class="inline-flex items-center gap-1 text-[0.6rem] font-bold tracking-widest text-brass uppercase transition-colors duration-300 group-hover:text-brass-light">
+                <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                Important
+              </span>
+            </div>
+            <h3 class="mt-2 font-display text-[1.15rem] leading-snug text-forest transition-colors duration-300 group-hover:text-paper">Mid-Term Examination Routine — All Departments</h3>
+            <p lang="bn" class="mt-1 text-[0.85rem] text-clay transition-colors duration-300 group-hover:text-paper/60">মধ্যবর্তী পরীক্ষার রুটিন — সকল বিভাগ</p>
+          </div>
+        </div>
+      </li>
+      <li data-dept-row="Computer Science &amp; Engineering" class="group border-t border-ink/10 px-4 py-5 transition-colors duration-300 hover:bg-forest sm:px-6">
+        <div class="flex items-start gap-4 sm:gap-6">
+          <div class="w-12 shrink-0 border-r border-ink/10 pr-4 text-center transition-colors duration-300 group-hover:border-paper/20 sm:w-14">
+            <span class="block font-display text-[1.6rem] leading-none text-forest transition-colors duration-300 group-hover:text-paper">18</span>
+            <span class="mt-1.5 block text-[0.58rem] tracking-[0.16em] text-clay uppercase transition-colors duration-300 group-hover:text-paper/60">Mar &rsquo;24</span>
+          </div>
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="border border-brass/40 bg-brass-pale/50 px-2 py-0.5 text-[0.58rem] font-bold tracking-widest text-forest uppercase transition-colors duration-300 group-hover:border-brass group-hover:bg-brass group-hover:text-forest-deep">Academic</span>
+              <span title="Computer Science &amp; Engineering" class="border border-ink/15 px-2 py-0.5 text-[0.58rem] font-semibold tracking-widest text-clay uppercase transition-colors duration-300 group-hover:border-paper/25 group-hover:text-paper/65">CSE</span>
+              <span class="inline-flex items-center gap-1 text-[0.6rem] font-bold tracking-widest text-brass uppercase transition-colors duration-300 group-hover:text-brass-light">
+                <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                Important
+              </span>
+            </div>
+            <h3 class="mt-2 font-display text-[1.15rem] leading-snug text-forest transition-colors duration-300 group-hover:text-paper">CSE Final Year Capstone Project Registration</h3>
+            <p lang="bn" class="mt-1 text-[0.85rem] text-clay transition-colors duration-300 group-hover:text-paper/60">সিএসই ফাইনাল ইয়ার ক্যাপস্টোন প্রজেক্ট রেজিস্ট্রেশন</p>
+          </div>
+        </div>
+      </li>
+      <li data-dept-row="Law" class="group border-t border-ink/10 px-4 py-5 transition-colors duration-300 hover:bg-forest sm:px-6">
+        <div class="flex items-start gap-4 sm:gap-6">
+          <div class="w-12 shrink-0 border-r border-ink/10 pr-4 text-center transition-colors duration-300 group-hover:border-paper/20 sm:w-14">
+            <span class="block font-display text-[1.6rem] leading-none text-forest transition-colors duration-300 group-hover:text-paper">12</span>
+            <span class="mt-1.5 block text-[0.58rem] tracking-[0.16em] text-clay uppercase transition-colors duration-300 group-hover:text-paper/60">Mar &rsquo;24</span>
+          </div>
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="border border-brass/40 bg-brass-pale/50 px-2 py-0.5 text-[0.58rem] font-bold tracking-widest text-forest uppercase transition-colors duration-300 group-hover:border-brass group-hover:bg-brass group-hover:text-forest-deep">Notice</span>
+              <span title="Law" class="border border-ink/15 px-2 py-0.5 text-[0.58rem] font-semibold tracking-widest text-clay uppercase transition-colors duration-300 group-hover:border-paper/25 group-hover:text-paper/65">Law</span>
+              <span class="inline-flex items-center gap-1 text-[0.6rem] font-bold tracking-widest text-brass uppercase transition-colors duration-300 group-hover:text-brass-light">
+                <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                Important
+              </span>
+            </div>
+            <h3 class="mt-2 font-display text-[1.15rem] leading-snug text-forest transition-colors duration-300 group-hover:text-paper">Moot Court Inter-Batch Championship Registration</h3>
+            <p lang="bn" class="mt-1 text-[0.85rem] text-clay transition-colors duration-300 group-hover:text-paper/60">মুট কোর্ট আন্তঃব্যাচ চ্যাম্পিয়নশিপ রেজিস্ট্রেশন</p>
+          </div>
+        </div>
+      </li>
+      <li data-dept-row="Business Administration" class="group border-t border-ink/10 px-4 py-5 transition-colors duration-300 hover:bg-forest sm:px-6">
+        <div class="flex items-start gap-4 sm:gap-6">
+          <div class="w-12 shrink-0 border-r border-ink/10 pr-4 text-center transition-colors duration-300 group-hover:border-paper/20 sm:w-14">
+            <span class="block font-display text-[1.6rem] leading-none text-forest transition-colors duration-300 group-hover:text-paper">05</span>
+            <span class="mt-1.5 block text-[0.58rem] tracking-[0.16em] text-clay uppercase transition-colors duration-300 group-hover:text-paper/60">Mar &rsquo;24</span>
+          </div>
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="border border-brass/40 bg-brass-pale/50 px-2 py-0.5 text-[0.58rem] font-bold tracking-widest text-forest uppercase transition-colors duration-300 group-hover:border-brass group-hover:bg-brass group-hover:text-forest-deep">Notice</span>
+              <span title="Business Administration" class="border border-ink/15 px-2 py-0.5 text-[0.58rem] font-semibold tracking-widest text-clay uppercase transition-colors duration-300 group-hover:border-paper/25 group-hover:text-paper/65">Business Admin.</span>
+              <span class="inline-flex items-center gap-1 text-[0.6rem] font-bold tracking-widest text-brass uppercase transition-colors duration-300 group-hover:text-brass-light">
+                <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                Important
+              </span>
+            </div>
+            <h3 class="mt-2 font-display text-[1.15rem] leading-snug text-forest transition-colors duration-300 group-hover:text-paper">BBA Industry Internship Placement Drive</h3>
+            <p lang="bn" class="mt-1 text-[0.85rem] text-clay transition-colors duration-300 group-hover:text-paper/60">বিবিএ ইন্ডাস্ট্রি ইন্টার্নশিপ প্লেসমেন্ট ড্রাইভ</p>
+          </div>
+        </div>
+      </li>
+      <li data-dept-row="Agriculture" class="group border-t border-ink/10 px-4 py-5 transition-colors duration-300 hover:bg-forest sm:px-6">
+        <div class="flex items-start gap-4 sm:gap-6">
+          <div class="w-12 shrink-0 border-r border-ink/10 pr-4 text-center transition-colors duration-300 group-hover:border-paper/20 sm:w-14">
+            <span class="block font-display text-[1.6rem] leading-none text-forest transition-colors duration-300 group-hover:text-paper">01</span>
+            <span class="mt-1.5 block text-[0.58rem] tracking-[0.16em] text-clay uppercase transition-colors duration-300 group-hover:text-paper/60">Mar &rsquo;24</span>
+          </div>
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="border border-brass/40 bg-brass-pale/50 px-2 py-0.5 text-[0.58rem] font-bold tracking-widest text-forest uppercase transition-colors duration-300 group-hover:border-brass group-hover:bg-brass group-hover:text-forest-deep">Notice</span>
+              <span title="Agriculture" class="border border-ink/15 px-2 py-0.5 text-[0.58rem] font-semibold tracking-widest text-clay uppercase transition-colors duration-300 group-hover:border-paper/25 group-hover:text-paper/65">Agriculture</span>
+              <span class="inline-flex items-center gap-1 text-[0.6rem] font-bold tracking-widest text-brass uppercase transition-colors duration-300 group-hover:text-brass-light">
+                <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                Important
+              </span>
+            </div>
+            <h3 class="mt-2 font-display text-[1.15rem] leading-snug text-forest transition-colors duration-300 group-hover:text-paper">Agriculture Instructional Farm Rotation Notice</h3>
+          </div>
+        </div>
+      </li>
+      <li data-dept-row="Public Health" class="group border-t border-ink/10 px-4 py-5 transition-colors duration-300 hover:bg-forest sm:px-6">
+        <div class="flex items-start gap-4 sm:gap-6">
+          <div class="w-12 shrink-0 border-r border-ink/10 pr-4 text-center transition-colors duration-300 group-hover:border-paper/20 sm:w-14">
+            <span class="block font-display text-[1.6rem] leading-none text-forest transition-colors duration-300 group-hover:text-paper">20</span>
+            <span class="mt-1.5 block text-[0.58rem] tracking-[0.16em] text-clay uppercase transition-colors duration-300 group-hover:text-paper/60">Feb &rsquo;24</span>
+          </div>
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="border border-brass/40 bg-brass-pale/50 px-2 py-0.5 text-[0.58rem] font-bold tracking-widest text-forest uppercase transition-colors duration-300 group-hover:border-brass group-hover:bg-brass group-hover:text-forest-deep">Result</span>
+              <span title="Public Health" class="border border-ink/15 px-2 py-0.5 text-[0.58rem] font-semibold tracking-widest text-clay uppercase transition-colors duration-300 group-hover:border-paper/25 group-hover:text-paper/65">Public Health</span>
+            </div>
+            <h3 class="mt-2 font-display text-[1.15rem] leading-snug text-forest transition-colors duration-300 group-hover:text-paper">MPH Field Practice Allocation List</h3>
+          </div>
+        </div>
+      </li>
+      <li data-dept-row="Sociology" class="group border-t border-ink/10 px-4 py-5 transition-colors duration-300 hover:bg-forest sm:px-6">
+        <div class="flex items-start gap-4 sm:gap-6">
+          <div class="w-12 shrink-0 border-r border-ink/10 pr-4 text-center transition-colors duration-300 group-hover:border-paper/20 sm:w-14">
+            <span class="block font-display text-[1.6rem] leading-none text-forest transition-colors duration-300 group-hover:text-paper">14</span>
+            <span class="mt-1.5 block text-[0.58rem] tracking-[0.16em] text-clay uppercase transition-colors duration-300 group-hover:text-paper/60">Feb &rsquo;24</span>
+          </div>
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="border border-brass/40 bg-brass-pale/50 px-2 py-0.5 text-[0.58rem] font-bold tracking-widest text-forest uppercase transition-colors duration-300 group-hover:border-brass group-hover:bg-brass group-hover:text-forest-deep">Academic</span>
+              <span title="Sociology" class="border border-ink/15 px-2 py-0.5 text-[0.58rem] font-semibold tracking-widest text-clay uppercase transition-colors duration-300 group-hover:border-paper/25 group-hover:text-paper/65">Sociology</span>
+            </div>
+            <h3 class="mt-2 font-display text-[1.15rem] leading-snug text-forest transition-colors duration-300 group-hover:text-paper">Sociology Fieldwork Consent &amp; Ethics Briefing</h3>
+            <p lang="bn" class="mt-1 text-[0.85rem] text-clay transition-colors duration-300 group-hover:text-paper/60">সমাজবিজ্ঞান ফিল্ডওয়ার্ক নীতিমালা</p>
+          </div>
+        </div>
+      </li>
+      <li data-dept-row="Electrical &amp; Electronic Engineering" class="group border-t border-ink/10 px-4 py-5 transition-colors duration-300 hover:bg-forest sm:px-6">
+        <div class="flex items-start gap-4 sm:gap-6">
+          <div class="w-12 shrink-0 border-r border-ink/10 pr-4 text-center transition-colors duration-300 group-hover:border-paper/20 sm:w-14">
+            <span class="block font-display text-[1.6rem] leading-none text-forest transition-colors duration-300 group-hover:text-paper">02</span>
+            <span class="mt-1.5 block text-[0.58rem] tracking-[0.16em] text-clay uppercase transition-colors duration-300 group-hover:text-paper/60">Feb &rsquo;24</span>
+          </div>
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="border border-brass/40 bg-brass-pale/50 px-2 py-0.5 text-[0.58rem] font-bold tracking-widest text-forest uppercase transition-colors duration-300 group-hover:border-brass group-hover:bg-brass group-hover:text-forest-deep">Academic</span>
+              <span title="Electrical &amp; Electronic Engineering" class="border border-ink/15 px-2 py-0.5 text-[0.58rem] font-semibold tracking-widest text-clay uppercase transition-colors duration-300 group-hover:border-paper/25 group-hover:text-paper/65">EEE</span>
+            </div>
+            <h3 class="mt-2 font-display text-[1.15rem] leading-snug text-forest transition-colors duration-300 group-hover:text-paper">EEE Laboratory Schedule — Spring Semester</h3>
+          </div>
+        </div>
+      </li>
+      <li data-dept-row="English" class="group border-t border-ink/10 px-4 py-5 transition-colors duration-300 hover:bg-forest sm:px-6">
+        <div class="flex items-start gap-4 sm:gap-6">
+          <div class="w-12 shrink-0 border-r border-ink/10 pr-4 text-center transition-colors duration-300 group-hover:border-paper/20 sm:w-14">
+            <span class="block font-display text-[1.6rem] leading-none text-forest transition-colors duration-300 group-hover:text-paper">28</span>
+            <span class="mt-1.5 block text-[0.58rem] tracking-[0.16em] text-clay uppercase transition-colors duration-300 group-hover:text-paper/60">Jan &rsquo;24</span>
+          </div>
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="border border-brass/40 bg-brass-pale/50 px-2 py-0.5 text-[0.58rem] font-bold tracking-widest text-forest uppercase transition-colors duration-300 group-hover:border-brass group-hover:bg-brass group-hover:text-forest-deep">Academic</span>
+              <span title="English" class="border border-ink/15 px-2 py-0.5 text-[0.58rem] font-semibold tracking-widest text-clay uppercase transition-colors duration-300 group-hover:border-paper/25 group-hover:text-paper/65">English</span>
+            </div>
+            <h3 class="mt-2 font-display text-[1.15rem] leading-snug text-forest transition-colors duration-300 group-hover:text-paper">English Language Lab Sessions — Attendance Policy</h3>
+          </div>
+        </div>
+      </li>
+      <li data-dept-row="" class="group border-t border-ink/10 px-4 py-5 transition-colors duration-300 hover:bg-forest sm:px-6">
+        <div class="flex items-start gap-4 sm:gap-6">
+          <div class="w-12 shrink-0 border-r border-ink/10 pr-4 text-center transition-colors duration-300 group-hover:border-paper/20 sm:w-14">
+            <span class="block font-display text-[1.6rem] leading-none text-forest transition-colors duration-300 group-hover:text-paper">15</span>
+            <span class="mt-1.5 block text-[0.58rem] tracking-[0.16em] text-clay uppercase transition-colors duration-300 group-hover:text-paper/60">Jan &rsquo;24</span>
+          </div>
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="border border-brass/40 bg-brass-pale/50 px-2 py-0.5 text-[0.58rem] font-bold tracking-widest text-forest uppercase transition-colors duration-300 group-hover:border-brass group-hover:bg-brass group-hover:text-forest-deep">Admission</span>
+              <span class="inline-flex items-center gap-1 text-[0.6rem] font-bold tracking-widest text-brass uppercase transition-colors duration-300 group-hover:text-brass-light">
+                <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                Important
+              </span>
+            </div>
+            <h3 class="mt-2 font-display text-[1.15rem] leading-snug text-forest transition-colors duration-300 group-hover:text-paper">Spring Semester Admission Open - limited seats</h3>
+          </div>
+        </div>
+      </li>
+      <li data-dept-row="" class="group border-t border-ink/10 px-4 py-5 transition-colors duration-300 hover:bg-forest sm:px-6">
+        <div class="flex items-start gap-4 sm:gap-6">
+          <div class="w-12 shrink-0 border-r border-ink/10 pr-4 text-center transition-colors duration-300 group-hover:border-paper/20 sm:w-14">
+            <span class="block font-display text-[1.6rem] leading-none text-forest transition-colors duration-300 group-hover:text-paper">20</span>
+            <span class="mt-1.5 block text-[0.58rem] tracking-[0.16em] text-clay uppercase transition-colors duration-300 group-hover:text-paper/60">Nov &rsquo;23</span>
+          </div>
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="border border-brass/40 bg-brass-pale/50 px-2 py-0.5 text-[0.58rem] font-bold tracking-widest text-forest uppercase transition-colors duration-300 group-hover:border-brass group-hover:bg-brass group-hover:text-forest-deep">Career</span>
+              <span class="inline-flex items-center gap-1 text-[0.6rem] font-bold tracking-widest text-brass uppercase transition-colors duration-300 group-hover:text-brass-light">
+                <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                Important
+              </span>
+            </div>
+            <h3 class="mt-2 font-display text-[1.15rem] leading-snug text-forest transition-colors duration-300 group-hover:text-paper">Recruitment Circular - 2</h3>
+            <p lang="bn" class="mt-1 text-[0.85rem] text-clay transition-colors duration-300 group-hover:text-paper/60">নিয়োগ বিজ্ঞপ্তি-২</p>
+          </div>
+        </div>
+      </li>
+      <li data-dept-row="" class="group border-t border-ink/10 px-4 py-5 transition-colors duration-300 hover:bg-forest sm:px-6">
+        <div class="flex items-start gap-4 sm:gap-6">
+          <div class="w-12 shrink-0 border-r border-ink/10 pr-4 text-center transition-colors duration-300 group-hover:border-paper/20 sm:w-14">
+            <span class="block font-display text-[1.6rem] leading-none text-forest transition-colors duration-300 group-hover:text-paper">05</span>
+            <span class="mt-1.5 block text-[0.58rem] tracking-[0.16em] text-clay uppercase transition-colors duration-300 group-hover:text-paper/60">Nov &rsquo;23</span>
+          </div>
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="border border-brass/40 bg-brass-pale/50 px-2 py-0.5 text-[0.58rem] font-bold tracking-widest text-forest uppercase transition-colors duration-300 group-hover:border-brass group-hover:bg-brass group-hover:text-forest-deep">Career</span>
+            </div>
+            <h3 class="mt-2 font-display text-[1.15rem] leading-snug text-forest transition-colors duration-300 group-hover:text-paper">Recruitment Circular - 1</h3>
+            <p lang="bn" class="mt-1 text-[0.85rem] text-clay transition-colors duration-300 group-hover:text-paper/60">নিয়োগ বিজ্ঞপ্তি-১</p>
+          </div>
+        </div>
+      </li>
+      <li data-dept-row="" class="group border-t border-ink/10 px-4 py-5 transition-colors duration-300 hover:bg-forest sm:px-6">
+        <div class="flex items-start gap-4 sm:gap-6">
+          <div class="w-12 shrink-0 border-r border-ink/10 pr-4 text-center transition-colors duration-300 group-hover:border-paper/20 sm:w-14">
+            <span class="block font-display text-[1.6rem] leading-none text-forest transition-colors duration-300 group-hover:text-paper">25</span>
+            <span class="mt-1.5 block text-[0.58rem] tracking-[0.16em] text-clay uppercase transition-colors duration-300 group-hover:text-paper/60">Jun &rsquo;23</span>
+          </div>
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="border border-brass/40 bg-brass-pale/50 px-2 py-0.5 text-[0.58rem] font-bold tracking-widest text-forest uppercase transition-colors duration-300 group-hover:border-brass group-hover:bg-brass group-hover:text-forest-deep">Holiday</span>
+            </div>
+            <h3 class="mt-2 font-display text-[1.15rem] leading-snug text-forest transition-colors duration-300 group-hover:text-paper">Eid-ul-Azha Holiday Notice 2023</h3>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <!-- ── Empty state (shown by JS when a filter has no notices) ── -->
+    <div data-empty hidden class="flex flex-col items-center border border-dashed border-ink/20 bg-card px-8 py-16 text-center">
+      <span class="flex h-14 w-14 items-center justify-center border border-brass/40 bg-brass-pale/40">
+        <svg class="h-6 w-6 text-brass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M17 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 .258-1.742"/><path d="m2 2 20 20"/><path d="M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05"/></svg>
+      </span>
+      <p class="mt-6 font-display text-2xl text-forest">
+        No notices from the board yet
+      </p>
+      <p class="mt-2 max-w-sm text-sm leading-relaxed text-ink/60">
+        Circulars for this department will appear here as the
+        Registrar&rsquo;s Office publishes them.
+      </p>
+      <button type="button" class="mt-8 inline-flex min-h-11 items-center bg-forest px-6 text-[0.72rem] font-semibold tracking-widest text-paper uppercase transition-colors duration-300 hover:bg-forest-deep">
+        View all notices
+      </button>
+    </div>
+
+    <!-- ── Footer row ───────────────────────────────────── -->
+    <div class="reveal" style="--reveal-delay:0.1s">
+      <div class="mt-12 flex flex-col items-center justify-between gap-6 sm:flex-row">
+        <p class="flex items-start gap-3 text-xs leading-relaxed text-clay sm:max-w-md">
+          <svg class="mt-0.5 h-4 w-4 shrink-0 text-brass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 18v-7"/><path d="M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M3 22h18"/><path d="M6 18v-7"/></svg>
+          Printed copies of every circular are pinned to the central notice
+          board in the administration building — open to all students and
+          guardians.
+        </p>
+        <a href="notices.html" class="group inline-flex min-h-11 shrink-0 items-center gap-2 bg-forest px-7 text-[0.72rem] font-bold tracking-widest text-paper uppercase transition-colors duration-300 hover:bg-forest-deep">
+          Visit the Full Notice Board
+          <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ Academics (departments) ═══════════════ -->
+<section id="academics" class="relative bg-paper-deep py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6">
+    <!-- Heading -->
+    <div class="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+      <div class="reveal max-w-2xl">
+        <span class="eyebrow inline-flex items-center gap-3 text-brass"><span aria-hidden="true" class="h-px w-10 bg-brass"></span>Academics</span>
+        <h2 class="mt-5 font-display text-4xl leading-[1.08] font-medium tracking-tight text-forest sm:text-5xl">
+          All of Our Prestigious <span class="display-italic font-light text-brass">Departments</span>
+        </h2>
+        <p class="mt-5 leading-relaxed text-ink/70">
+          Undergraduate and graduate programs across eight departments —
+          a curriculum crafted to equip students with the skills the
+          21st-century workplace demands.
+        </p>
+      </div>
+      <div class="reveal" style="--reveal-delay:0.15s">
+        <div class="flex items-center gap-3 text-forest">
+          <svg class="h-5 w-5 text-brass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+          <span class="eyebrow text-[0.62rem] text-clay">5 Faculties · 8 Departments</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="reveal" style="--reveal-delay:0.2s">
+      <div class="mt-12 flex flex-wrap gap-2" role="tablist" aria-label="Filter departments by faculty">
+        <button type="button" role="tab" aria-selected="true" class="border px-4 py-2 text-[0.72rem] font-semibold tracking-wider uppercase transition-all duration-300 border-forest bg-forest text-paper">All</button>
+        <button type="button" role="tab" aria-selected="false" class="border px-4 py-2 text-[0.72rem] font-semibold tracking-wider uppercase transition-all duration-300 border-ink/15 text-ink/60 hover:border-brass hover:text-forest">Science &amp; Engineering Technology</button>
+        <button type="button" role="tab" aria-selected="false" class="border px-4 py-2 text-[0.72rem] font-semibold tracking-wider uppercase transition-all duration-300 border-ink/15 text-ink/60 hover:border-brass hover:text-forest">Law</button>
+        <button type="button" role="tab" aria-selected="false" class="border px-4 py-2 text-[0.72rem] font-semibold tracking-wider uppercase transition-all duration-300 border-ink/15 text-ink/60 hover:border-brass hover:text-forest">Business Administration</button>
+        <button type="button" role="tab" aria-selected="false" class="border px-4 py-2 text-[0.72rem] font-semibold tracking-wider uppercase transition-all duration-300 border-ink/15 text-ink/60 hover:border-brass hover:text-forest">Arts &amp; Social Science</button>
+        <button type="button" role="tab" aria-selected="false" class="border px-4 py-2 text-[0.72rem] font-semibold tracking-wider uppercase transition-all duration-300 border-ink/15 text-ink/60 hover:border-brass hover:text-forest">Agriculture</button>
+      </div>
+    </div>
+
+    <!-- Grid -->
+    <div class="mt-10 grid gap-px border border-ink/10 bg-ink/10 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="reveal h-full">
+        <article class="group relative flex h-full flex-col bg-card p-8 transition-all duration-500 hover:bg-forest">
+          <span class="font-display text-sm text-brass">01</span>
+          <h3 class="mt-6 font-display text-[1.45rem] leading-tight font-medium text-forest transition-colors duration-500 group-hover:text-paper">Computer Science &amp; Engineering</h3>
+          <p class="eyebrow mt-2 text-[0.58rem] text-clay transition-colors duration-500 group-hover:text-brass-light">Science &amp; Engineering Technology</p>
+          <p class="mt-4 flex-1 text-sm leading-relaxed text-ink/65 transition-colors duration-500 group-hover:text-paper/75">Software engineering, AI and modern computing with hands-on lab practice in our excellent computer labs.</p>
+          <div class="mt-6 flex items-center justify-between border-t border-ink/10 pt-4 transition-colors duration-500 group-hover:border-paper/20">
+            <span class="text-[0.7rem] tracking-wider text-forest/70 uppercase transition-colors duration-500 group-hover:text-paper/70">B.Sc. (Hons) · 4 Years</span>
+            <svg class="h-4 w-4 text-brass transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </div>
+        </article>
+      </div>
+      <div class="reveal h-full" style="--reveal-delay:0.06s">
+        <article class="group relative flex h-full flex-col bg-card p-8 transition-all duration-500 hover:bg-forest">
+          <span class="font-display text-sm text-brass">02</span>
+          <h3 class="mt-6 font-display text-[1.45rem] leading-tight font-medium text-forest transition-colors duration-500 group-hover:text-paper">Electrical &amp; Electronic Engineering</h3>
+          <p class="eyebrow mt-2 text-[0.58rem] text-clay transition-colors duration-500 group-hover:text-brass-light">Science &amp; Engineering Technology</p>
+          <p class="mt-4 flex-1 text-sm leading-relaxed text-ink/65 transition-colors duration-500 group-hover:text-paper/75">Circuits, power systems and electronics taught by experienced full-time faculty with modern lab facilities.</p>
+          <div class="mt-6 flex items-center justify-between border-t border-ink/10 pt-4 transition-colors duration-500 group-hover:border-paper/20">
+            <span class="text-[0.7rem] tracking-wider text-forest/70 uppercase transition-colors duration-500 group-hover:text-paper/70">B.Sc. (Hons) · 4 Years</span>
+            <svg class="h-4 w-4 text-brass transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </div>
+        </article>
+      </div>
+      <div class="reveal h-full" style="--reveal-delay:0.12s">
+        <article class="group relative flex h-full flex-col bg-card p-8 transition-all duration-500 hover:bg-forest">
+          <span class="font-display text-sm text-brass">03</span>
+          <h3 class="mt-6 font-display text-[1.45rem] leading-tight font-medium text-forest transition-colors duration-500 group-hover:text-paper">Public Health</h3>
+          <p class="eyebrow mt-2 text-[0.58rem] text-clay transition-colors duration-500 group-hover:text-brass-light">Science &amp; Engineering Technology</p>
+          <p class="mt-4 flex-1 text-sm leading-relaxed text-ink/65 transition-colors duration-500 group-hover:text-paper/75">Community health, epidemiology and policy for the next generation of public-health leaders.</p>
+          <div class="mt-6 flex items-center justify-between border-t border-ink/10 pt-4 transition-colors duration-500 group-hover:border-paper/20">
+            <span class="text-[0.7rem] tracking-wider text-forest/70 uppercase transition-colors duration-500 group-hover:text-paper/70">BPH · MPH</span>
+            <svg class="h-4 w-4 text-brass transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </div>
+        </article>
+      </div>
+      <div class="reveal h-full" style="--reveal-delay:0.18s">
+        <article class="group relative flex h-full flex-col bg-card p-8 transition-all duration-500 hover:bg-forest">
+          <span class="font-display text-sm text-brass">04</span>
+          <h3 class="mt-6 font-display text-[1.45rem] leading-tight font-medium text-forest transition-colors duration-500 group-hover:text-paper">Law</h3>
+          <p class="eyebrow mt-2 text-[0.58rem] text-clay transition-colors duration-500 group-hover:text-brass-light">Law</p>
+          <p class="mt-4 flex-1 text-sm leading-relaxed text-ink/65 transition-colors duration-500 group-hover:text-paper/75">Moot courts, legal research and constitutional studies in a politics-free academic environment.</p>
+          <div class="mt-6 flex items-center justify-between border-t border-ink/10 pt-4 transition-colors duration-500 group-hover:border-paper/20">
+            <span class="text-[0.7rem] tracking-wider text-forest/70 uppercase transition-colors duration-500 group-hover:text-paper/70">LL.B. (Hons) · LLM</span>
+            <svg class="h-4 w-4 text-brass transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </div>
+        </article>
+      </div>
+      <div class="reveal h-full" style="--reveal-delay:0.24s">
+        <article class="group relative flex h-full flex-col bg-card p-8 transition-all duration-500 hover:bg-forest">
+          <span class="font-display text-sm text-brass">05</span>
+          <h3 class="mt-6 font-display text-[1.45rem] leading-tight font-medium text-forest transition-colors duration-500 group-hover:text-paper">Business Administration</h3>
+          <p class="eyebrow mt-2 text-[0.58rem] text-clay transition-colors duration-500 group-hover:text-brass-light">Business Administration</p>
+          <p class="mt-4 flex-1 text-sm leading-relaxed text-ink/65 transition-colors duration-500 group-hover:text-paper/75">Management, marketing and finance with executive programs and industry mentoring.</p>
+          <div class="mt-6 flex items-center justify-between border-t border-ink/10 pt-4 transition-colors duration-500 group-hover:border-paper/20">
+            <span class="text-[0.7rem] tracking-wider text-forest/70 uppercase transition-colors duration-500 group-hover:text-paper/70">BBA · MBA</span>
+            <svg class="h-4 w-4 text-brass transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </div>
+        </article>
+      </div>
+      <div class="reveal h-full" style="--reveal-delay:0.3s">
+        <article class="group relative flex h-full flex-col bg-card p-8 transition-all duration-500 hover:bg-forest">
+          <span class="font-display text-sm text-brass">06</span>
+          <h3 class="mt-6 font-display text-[1.45rem] leading-tight font-medium text-forest transition-colors duration-500 group-hover:text-paper">English</h3>
+          <p class="eyebrow mt-2 text-[0.58rem] text-clay transition-colors duration-500 group-hover:text-brass-light">Arts &amp; Social Science</p>
+          <p class="mt-4 flex-1 text-sm leading-relaxed text-ink/65 transition-colors duration-500 group-hover:text-paper/75">Literature, linguistics and communication skills that open global career doors.</p>
+          <div class="mt-6 flex items-center justify-between border-t border-ink/10 pt-4 transition-colors duration-500 group-hover:border-paper/20">
+            <span class="text-[0.7rem] tracking-wider text-forest/70 uppercase transition-colors duration-500 group-hover:text-paper/70">B.A. (Hons) · M.A.</span>
+            <svg class="h-4 w-4 text-brass transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </div>
+        </article>
+      </div>
+      <div class="reveal h-full" style="--reveal-delay:0.36s">
+        <article class="group relative flex h-full flex-col bg-card p-8 transition-all duration-500 hover:bg-forest">
+          <span class="font-display text-sm text-brass">07</span>
+          <h3 class="mt-6 font-display text-[1.45rem] leading-tight font-medium text-forest transition-colors duration-500 group-hover:text-paper">Sociology</h3>
+          <p class="eyebrow mt-2 text-[0.58rem] text-clay transition-colors duration-500 group-hover:text-brass-light">Arts &amp; Social Science</p>
+          <p class="mt-4 flex-1 text-sm leading-relaxed text-ink/65 transition-colors duration-500 group-hover:text-paper/75">Understanding society, research methods and social change in Bangladesh and beyond.</p>
+          <div class="mt-6 flex items-center justify-between border-t border-ink/10 pt-4 transition-colors duration-500 group-hover:border-paper/20">
+            <span class="text-[0.7rem] tracking-wider text-forest/70 uppercase transition-colors duration-500 group-hover:text-paper/70">B.A. (Hons) · M.A.</span>
+            <svg class="h-4 w-4 text-brass transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </div>
+        </article>
+      </div>
+      <div class="reveal h-full" style="--reveal-delay:0.4s">
+        <article class="group relative flex h-full flex-col bg-card p-8 transition-all duration-500 hover:bg-forest">
+          <span class="font-display text-sm text-brass">08</span>
+          <h3 class="mt-6 font-display text-[1.45rem] leading-tight font-medium text-forest transition-colors duration-500 group-hover:text-paper">Agriculture</h3>
+          <p class="eyebrow mt-2 text-[0.58rem] text-clay transition-colors duration-500 group-hover:text-brass-light">Agriculture</p>
+          <p class="mt-4 flex-1 text-sm leading-relaxed text-ink/65 transition-colors duration-500 group-hover:text-paper/75">Modern agronomy and sustainable farming practice for the agro-industrial future of the region.</p>
+          <div class="mt-6 flex items-center justify-between border-t border-ink/10 pt-4 transition-colors duration-500 group-hover:border-paper/20">
+            <span class="text-[0.7rem] tracking-wider text-forest/70 uppercase transition-colors duration-500 group-hover:text-paper/70">B.S. Agriculture (Hons)</span>
+            <svg class="h-4 w-4 text-brass transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ Admissions ═══════════════ -->
+<section id="admission" class="grain relative overflow-hidden bg-forest-deep py-24 text-paper sm:py-32">
+  <!-- Ghost numeral -->
+  <span aria-hidden="true" class="pointer-events-none absolute -top-10 right-0 font-display text-[16rem] leading-none text-paper/[0.04] select-none lg:text-[22rem]">01</span>
+
+  <div class="relative mx-auto max-w-7xl px-6">
+    <div class="grid gap-16 lg:grid-cols-12">
+      <!-- Left: heading + steps -->
+      <div class="lg:col-span-5">
+        <div class="reveal">
+          <span class="eyebrow inline-flex items-center gap-3 text-brass"><span aria-hidden="true" class="h-px w-10 bg-brass"></span>Admissions</span>
+          <h2 class="mt-5 font-display text-4xl leading-[1.08] font-medium tracking-tight sm:text-5xl">
+            Your Seat Awaits — <span class="display-italic font-light text-brass-light">Begin Here.</span>
+          </h2>
+          <p class="mt-6 leading-relaxed text-paper/70">
+            Admission is open for Bachelor and Master programs across all
+            five faculties. Four simple steps stand between you and your
+            first lecture.
+          </p>
+        </div>
+
+        <div class="reveal" style="--reveal-delay:0.15s">
+          <ol class="mt-10 space-y-0 border-t border-paper/15">
+            <li class="group flex items-center gap-6 border-b border-paper/15 py-4 transition-colors hover:bg-paper/5">
+              <span class="font-display text-lg text-brass-light">01</span>
+              <span class="text-sm tracking-wide text-paper/85">Choose your program</span>
+              <svg class="ml-auto h-4 w-4 text-brass-light opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </li>
+            <li class="group flex items-center gap-6 border-b border-paper/15 py-4 transition-colors hover:bg-paper/5">
+              <span class="font-display text-lg text-brass-light">02</span>
+              <span class="text-sm tracking-wide text-paper/85">Submit your application</span>
+              <svg class="ml-auto h-4 w-4 text-brass-light opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </li>
+            <li class="group flex items-center gap-6 border-b border-paper/15 py-4 transition-colors hover:bg-paper/5">
+              <span class="font-display text-lg text-brass-light">03</span>
+              <span class="text-sm tracking-wide text-paper/85">Admission test &amp; review</span>
+              <svg class="ml-auto h-4 w-4 text-brass-light opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </li>
+            <li class="group flex items-center gap-6 border-b border-paper/15 py-4 transition-colors hover:bg-paper/5">
+              <span class="font-display text-lg text-brass-light">04</span>
+              <span class="text-sm tracking-wide text-paper/85">Enroll &amp; begin your journey</span>
+              <svg class="ml-auto h-4 w-4 text-brass-light opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </li>
+          </ol>
+        </div>
+
+        <div class="reveal" style="--reveal-delay:0.25s">
+          <a href="contact.html" class="group mt-10 inline-flex items-center gap-3 bg-brass px-7 py-4 text-[0.8rem] font-semibold tracking-widest text-forest-deep uppercase transition-all duration-300 hover:bg-brass-light">
+            Request Admission Info
+            <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: pillars -->
+      <div class="grid gap-px bg-paper/15 sm:grid-cols-2 lg:col-span-7">
+        <div class="reveal group bg-forest-deep p-8 transition-colors duration-500 hover:bg-forest sm:p-10">
+          <svg class="h-7 w-7 text-brass-light transition-transform duration-500 group-hover:-translate-y-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" x2="19" y1="8" y2="14"/><line x1="22" x2="16" y1="11" y2="11"/></svg>
+          <h3 class="mt-6 font-display text-2xl text-paper">Admission</h3>
+          <p class="mt-4 text-sm leading-relaxed text-paper/65">Our student body comprises individuals from diverse backgrounds, cultures and nationalities — over 2,000 students currently enrolled across a range of programs.</p>
+        </div>
+        <div class="reveal group bg-forest-deep p-8 transition-colors duration-500 hover:bg-forest sm:p-10" style="--reveal-delay:0.1s">
+          <svg class="h-7 w-7 text-brass-light transition-transform duration-500 group-hover:-translate-y-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+          <h3 class="mt-6 font-display text-2xl text-paper">Programs</h3>
+          <p class="mt-4 text-sm leading-relaxed text-paper/65">Undergraduate and graduate programs across 8 departments — a curriculum crafted to equip students with the skills necessary for 21st-century employment.</p>
+        </div>
+        <div class="reveal group bg-forest-deep p-8 transition-colors duration-500 hover:bg-forest sm:p-10" style="--reveal-delay:0.2s">
+          <svg class="h-7 w-7 text-brass-light transition-transform duration-500 group-hover:-translate-y-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg>
+          <h3 class="mt-6 font-display text-2xl text-paper">Tuition Fees</h3>
+          <p class="mt-4 text-sm leading-relaxed text-paper/65">Cost-effective tuition with the flexibility to pay in multiple installments — the lowest fees with the highest waivers in the region.</p>
+        </div>
+        <div class="reveal group bg-forest-deep p-8 transition-colors duration-500 hover:bg-forest sm:p-10" style="--reveal-delay:0.3s">
+          <svg class="h-7 w-7 text-brass-light transition-transform duration-500 group-hover:-translate-y-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+          <h3 class="mt-6 font-display text-2xl text-paper">Scholarship</h3>
+          <p class="mt-4 text-sm leading-relaxed text-paper/65">We ensure every student receives the support to successfully complete their degree. Scholarships reward outstanding academic achievement.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ Leadership ═══════════════ -->
+<section id="leadership" class="bg-paper py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <div class="reveal">
+        <span class="eyebrow inline-flex items-center gap-3 text-brass justify-center"><span aria-hidden="true" class="h-px w-10 bg-brass"></span>Leadership</span>
+        <h2 class="mt-5 font-display text-4xl leading-[1.08] font-medium tracking-tight text-forest sm:text-5xl">
+          The People Behind <span class="display-italic font-light text-brass">the Mission</span>
+        </h2>
+        <p class="mt-5 leading-relaxed text-ink/70">
+          Visionary stewardship from the Board of Trustees and university
+          administration keeps FCUB true to its founding promise.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-16 grid gap-6 md:grid-cols-3">
+      <div class="reveal h-full">
+        <article class="group relative flex h-full flex-col border border-ink/10 bg-card p-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-brass/50 hover:shadow-[0_28px_60px_rgba(8,33,26,0.14)] sm:p-10">
+          <!-- Monogram medallion -->
+          <div class="flex items-start justify-between">
+            <div class="flex h-16 w-16 items-center justify-center rounded-full border border-brass/50 bg-forest text-paper">
+              <span class="font-display text-xl tracking-wider">SH</span>
+            </div>
+            <span class="font-display text-4xl text-brass/25">01</span>
+          </div>
+          <h3 class="mt-8 font-display text-[1.5rem] leading-snug font-medium text-forest">Solaiman Haque Joarder Selun</h3>
+          <p class="mt-2 text-sm font-semibold tracking-wide text-brass">Founder &amp; Chairman, Board of Trustees</p>
+          <p class="eyebrow mt-1 text-[0.55rem] text-clay">First Capital University of Bangladesh</p>
+          <blockquote class="mt-6 flex-1 border-t border-ink/10 pt-6">
+            <svg class="h-4 w-4 text-brass/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg>
+            <p class="mt-3 font-display text-[1.05rem] leading-relaxed text-ink/75 italic">Education for excellence — where our learners become leaders.</p>
+          </blockquote>
+        </article>
+      </div>
+      <div class="reveal h-full" style="--reveal-delay:0.12s">
+        <article class="group relative flex h-full flex-col border border-ink/10 bg-card p-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-brass/50 hover:shadow-[0_28px_60px_rgba(8,33,26,0.14)] sm:p-10">
+          <div class="flex items-start justify-between">
+            <div class="flex h-16 w-16 items-center justify-center rounded-full border border-brass/50 bg-forest text-paper">
+              <span class="font-display text-xl tracking-wider">MM</span>
+            </div>
+            <span class="font-display text-4xl text-brass/25">02</span>
+          </div>
+          <h3 class="mt-8 font-display text-[1.5rem] leading-snug font-medium text-forest">Prof. Dr. M. Mofazzal Hossain</h3>
+          <p class="mt-2 text-sm font-semibold tracking-wide text-brass">Vice-Chancellor</p>
+          <p class="eyebrow mt-1 text-[0.55rem] text-clay">First Capital University of Bangladesh</p>
+          <blockquote class="mt-6 flex-1 border-t border-ink/10 pt-6">
+            <svg class="h-4 w-4 text-brass/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg>
+            <p class="mt-3 font-display text-[1.05rem] leading-relaxed text-ink/75 italic">Highly educated, experienced and full-time faculty are always available for our students.</p>
+          </blockquote>
+        </article>
+      </div>
+      <div class="reveal h-full" style="--reveal-delay:0.24s">
+        <article class="group relative flex h-full flex-col border border-ink/10 bg-card p-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-brass/50 hover:shadow-[0_28px_60px_rgba(8,33,26,0.14)] sm:p-10">
+          <div class="flex items-start justify-between">
+            <div class="flex h-16 w-16 items-center justify-center rounded-full border border-brass/50 bg-forest text-paper">
+              <span class="font-display text-xl tracking-wider">RI</span>
+            </div>
+            <span class="font-display text-4xl text-brass/25">03</span>
+          </div>
+          <h3 class="mt-8 font-display text-[1.5rem] leading-snug font-medium text-forest">Reajul Islam Joarder</h3>
+          <p class="mt-2 text-sm font-semibold tracking-wide text-brass">Vice-Chairman</p>
+          <p class="eyebrow mt-1 text-[0.55rem] text-clay">First Capital University of Bangladesh</p>
+          <blockquote class="mt-6 flex-1 border-t border-ink/10 pt-6">
+            <svg class="h-4 w-4 text-brass/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg>
+            <p class="mt-3 font-display text-[1.05rem] leading-relaxed text-ink/75 italic">The first private university of Khulna Division, built for the future of our region.</p>
+          </blockquote>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ Founder & Board of Trustees ═══════════════ -->
+<section id="founders" aria-labelledby="founders-heading" class="border-t border-ink/10 bg-paper py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6">
+    <!-- ── Editorial header ───────────────────────────────── -->
+    <div class="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+      <div class="reveal max-w-2xl">
+        <span class="eyebrow inline-flex items-center gap-3 text-brass"><span aria-hidden="true" class="h-px w-10 bg-brass"></span>Leadership &amp; Vision</span>
+        <h2 id="founders-heading" class="mt-5 font-display text-4xl leading-[1.08] font-medium tracking-tight text-forest sm:text-5xl">
+          The People Behind the <span class="display-italic font-light text-brass">Promise</span>
+        </h2>
+        <p class="mt-5 leading-relaxed text-ink/70">
+          A founder&rsquo;s word, given in 2013, and the board that stewards it —
+          keeping First Capital University true to the standard it was built
+          to set.
+        </p>
+      </div>
+      <div class="reveal" style="--reveal-delay:0.15s">
+        <div class="flex items-center gap-3 text-forest">
+          <svg class="h-5 w-5 text-brass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 18v-7"/><path d="M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M3 22h18"/><path d="M6 18v-7"/></svg>
+          <span class="eyebrow text-[0.62rem] text-clay">1 Founder · 6 Trustees · Est. 2013</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Founder feature ────────────────────────────────── -->
+    <div class="mt-16 grid items-center gap-12 lg:mt-20 lg:grid-cols-12 lg:gap-16">
+      <div class="reveal lg:col-span-5">
+        <div class="frame-arch relative mx-auto w-full max-w-md">
+          <div class="relative aspect-[4/5] w-full overflow-hidden bg-paper-deep">
+            <img src="images/people/founder.jpg" alt="Portrait of Solaiman Haque Joarder Selun" class="h-full w-full object-cover" />
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal lg:col-span-7" style="--reveal-delay:0.12s">
+        <span class="eyebrow inline-flex items-center gap-3 text-brass"><span aria-hidden="true" class="h-px w-10 bg-brass"></span>Founder &amp; Chairman</span>
+        <h3 class="mt-6 font-display text-3xl leading-tight font-medium tracking-tight text-forest sm:text-4xl">Solaiman Haque Joarder Selun</h3>
+        <blockquote class="mt-7">
+          <svg class="h-4 w-4 text-brass/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg>
+          <p class="display-italic mt-4 font-display text-xl leading-relaxed text-ink/80">When we laid the first brick of this university, we made a promise to the people of Chuadanga and the greater Khulna Division — that world-class higher education would no longer require our children to leave home. First Capital University stands today as that promise kept: a politics-free campus, full-time dedicated faculty and a curriculum built for the careers of tomorrow.</p>
+        </blockquote>
+        <div class="mt-10 flex flex-wrap items-end justify-between gap-x-10 gap-y-5 border-t border-ink/10 pt-6">
+          <div>
+            <p class="display-italic font-display text-[1.7rem] leading-none text-forest">Solaiman Haque Joarder Selun</p>
+            <p class="eyebrow mt-2.5 text-[0.55rem] text-clay">First Capital University of Bangladesh</p>
+          </div>
+          <p class="text-[0.68rem] font-semibold tracking-[0.2em] text-brass uppercase">Established 2013 · Ghoramara, Chuadanga</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Board of Trustees grid ─────────────────────────── -->
+    <div class="mt-20 border-t border-ink/10 pt-8 lg:mt-24">
+      <div class="reveal">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <h3 class="font-display text-2xl leading-tight font-medium text-forest sm:text-3xl">
+            Board of <span class="display-italic font-light text-brass">Trustees</span>
+          </h3>
+          <p class="eyebrow text-[0.62rem] text-clay">06 Members · Statutory Governance</p>
+        </div>
+      </div>
+
+      <div class="mt-10 grid gap-px border border-ink/10 bg-ink/10 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="reveal h-full">
+          <article class="group flex h-full flex-col bg-card p-6 transition-colors duration-500 hover:bg-forest sm:p-8">
+            <div class="relative aspect-[4/5] w-full overflow-hidden bg-paper-deep">
+              <img src="images/people/founder.jpg" alt="Portrait of Solaiman Haque Joarder Selun" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+              <span class="absolute top-3 left-3 bg-brass px-2.5 py-1 text-[0.55rem] font-bold tracking-widest text-forest-deep uppercase">Founder</span>
+            </div>
+            <span class="mt-6 font-display text-sm text-brass">01</span>
+            <h4 class="mt-2 font-display text-xl leading-snug font-medium text-forest transition-colors duration-500 group-hover:text-paper">Solaiman Haque Joarder Selun</h4>
+            <p class="eyebrow mt-2 text-[0.58rem] text-brass transition-colors duration-500 group-hover:text-brass-light">Founder &amp; Chairman</p>
+            <p class="mt-3 text-sm leading-relaxed text-clay transition-colors duration-500 group-hover:text-paper/65">Philanthropist &amp; Education Entrepreneur</p>
+          </article>
+        </div>
+        <div class="reveal h-full" style="--reveal-delay:0.06s">
+          <article class="group flex h-full flex-col bg-card p-6 transition-colors duration-500 hover:bg-forest sm:p-8">
+            <div class="relative aspect-[4/5] w-full overflow-hidden bg-paper-deep">
+              <img src="images/people/board-vice.jpg" alt="Portrait of Reajul Islam Joarder" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+            </div>
+            <span class="mt-6 font-display text-sm text-brass">02</span>
+            <h4 class="mt-2 font-display text-xl leading-snug font-medium text-forest transition-colors duration-500 group-hover:text-paper">Reajul Islam Joarder</h4>
+            <p class="eyebrow mt-2 text-[0.58rem] text-brass transition-colors duration-500 group-hover:text-brass-light">Vice-Chairman, Board of Trustees</p>
+            <p class="mt-3 text-sm leading-relaxed text-clay transition-colors duration-500 group-hover:text-paper/65">M.A. · Community Leadership</p>
+          </article>
+        </div>
+        <div class="reveal h-full" style="--reveal-delay:0.12s">
+          <article class="group flex h-full flex-col bg-card p-6 transition-colors duration-500 hover:bg-forest sm:p-8">
+            <div class="relative aspect-[4/5] w-full overflow-hidden bg-paper-deep">
+              <img src="images/people/board-treas.jpg" alt="Portrait of Md. Kamruzzaman" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+            </div>
+            <span class="mt-6 font-display text-sm text-brass">03</span>
+            <h4 class="mt-2 font-display text-xl leading-snug font-medium text-forest transition-colors duration-500 group-hover:text-paper">Md. Kamruzzaman</h4>
+            <p class="eyebrow mt-2 text-[0.58rem] text-brass transition-colors duration-500 group-hover:text-brass-light">Treasurer, Board of Trustees</p>
+            <p class="mt-3 text-sm leading-relaxed text-clay transition-colors duration-500 group-hover:text-paper/65">M.Com. · Finance &amp; Audit</p>
+          </article>
+        </div>
+        <div class="reveal h-full" style="--reveal-delay:0.18s">
+          <article class="group flex h-full flex-col bg-card p-6 transition-colors duration-500 hover:bg-forest sm:p-8">
+            <div class="relative aspect-[4/5] w-full overflow-hidden bg-paper-deep">
+              <img src="images/people/board-1.jpg" alt="Portrait of Mrs. Salma Begum" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+            </div>
+            <span class="mt-6 font-display text-sm text-brass">04</span>
+            <h4 class="mt-2 font-display text-xl leading-snug font-medium text-forest transition-colors duration-500 group-hover:text-paper">Mrs. Salma Begum</h4>
+            <p class="eyebrow mt-2 text-[0.58rem] text-brass transition-colors duration-500 group-hover:text-brass-light">Member, Board of Trustees</p>
+            <p class="mt-3 text-sm leading-relaxed text-clay transition-colors duration-500 group-hover:text-paper/65">M.A. · Education Policy</p>
+          </article>
+        </div>
+        <div class="reveal h-full" style="--reveal-delay:0.24s">
+          <article class="group flex h-full flex-col bg-card p-6 transition-colors duration-500 hover:bg-forest sm:p-8">
+            <div class="relative aspect-[4/5] w-full overflow-hidden bg-paper-deep">
+              <img src="images/people/board-2.jpg" alt="Portrait of Adv. Liakat Ali" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+            </div>
+            <span class="mt-6 font-display text-sm text-brass">05</span>
+            <h4 class="mt-2 font-display text-xl leading-snug font-medium text-forest transition-colors duration-500 group-hover:text-paper">Adv. Liakat Ali</h4>
+            <p class="eyebrow mt-2 text-[0.58rem] text-brass transition-colors duration-500 group-hover:text-brass-light">Member, Board of Trustees</p>
+            <p class="mt-3 text-sm leading-relaxed text-clay transition-colors duration-500 group-hover:text-paper/65">LL.B. · Senior Advocate, Chuadanga Bar</p>
+          </article>
+        </div>
+        <div class="reveal h-full" style="--reveal-delay:0.3s">
+          <article class="group flex h-full flex-col bg-card p-6 transition-colors duration-500 hover:bg-forest sm:p-8">
+            <div class="relative aspect-[4/5] w-full overflow-hidden bg-paper-deep">
+              <img src="images/people/board-3.jpg" alt="Portrait of Dr. Nasrin Sultana" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+            </div>
+            <span class="mt-6 font-display text-sm text-brass">06</span>
+            <h4 class="mt-2 font-display text-xl leading-snug font-medium text-forest transition-colors duration-500 group-hover:text-paper">Dr. Nasrin Sultana</h4>
+            <p class="eyebrow mt-2 text-[0.58rem] text-brass transition-colors duration-500 group-hover:text-brass-light">Member Secretary, Board of Trustees</p>
+            <p class="mt-3 text-sm leading-relaxed text-clay transition-colors duration-500 group-hover:text-paper/65">Ph.D. · Public Administration</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Thin CTA row ───────────────────────────────────── -->
+    <div class="reveal" style="--reveal-delay:0.1s">
+      <div class="mt-16 flex flex-col items-start justify-between gap-6 border-t border-ink/10 pt-8 sm:flex-row sm:items-center">
+        <p class="max-w-md text-xs leading-relaxed text-clay">
+          The Board of Trustees meets quarterly to safeguard academic
+          standards, fiscal transparency and the politics-free character of
+          the campus.
+        </p>
+        <a href="leadership.html" class="group inline-flex min-h-11 items-center gap-2 text-[0.72rem] font-semibold tracking-widest text-forest uppercase transition-colors duration-300 hover:text-brass">
+          Learn more about governance
+          <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ Why FCUB ═══════════════ -->
+<section class="relative bg-paper-deep py-24 sm:py-32">
+  <div class="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-2">
+    <!-- Left: Why choose us -->
+    <div>
+      <div class="reveal">
+        <span class="eyebrow inline-flex items-center gap-3 text-brass"><span aria-hidden="true" class="h-px w-10 bg-brass"></span>Why FCUB</span>
+        <h2 class="mt-5 font-display text-4xl leading-[1.08] font-medium tracking-tight text-forest sm:text-5xl">
+          Why Choose Us? <span class="display-italic font-light text-brass">Why Not.</span>
+        </h2>
+        <p class="mt-5 max-w-lg leading-relaxed text-ink/70">
+          Everything a serious student needs — and nothing that gets in
+          the way of a serious education.
+        </p>
+      </div>
+
+      <div class="reveal" style="--reveal-delay:0.15s">
+        <ul class="mt-10 divide-y divide-ink/10 border-y border-ink/10">
+          <li class="group flex items-center gap-4 py-4 transition-colors hover:bg-card">
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center border border-brass/50 bg-brass-pale/50 text-forest transition-colors duration-300 group-hover:bg-brass group-hover:text-paper">
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <span class="text-[0.95rem] text-ink/80">One of the best private universities in Bangladesh</span>
+          </li>
+          <li class="group flex items-center gap-4 py-4 transition-colors hover:bg-card">
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center border border-brass/50 bg-brass-pale/50 text-forest transition-colors duration-300 group-hover:bg-brass group-hover:text-paper">
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <span class="text-[0.95rem] text-ink/80">Experienced, skilled and dedicated full-time faculty members</span>
+          </li>
+          <li class="group flex items-center gap-4 py-4 transition-colors hover:bg-card">
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center border border-brass/50 bg-brass-pale/50 text-forest transition-colors duration-300 group-hover:bg-brass group-hover:text-paper">
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <span class="text-[0.95rem] text-ink/80">Highly qualified guest and visiting professors</span>
+          </li>
+          <li class="group flex items-center gap-4 py-4 transition-colors hover:bg-card">
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center border border-brass/50 bg-brass-pale/50 text-forest transition-colors duration-300 group-hover:bg-brass group-hover:text-paper">
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <span class="text-[0.95rem] text-ink/80">Enriched library with scheduled research works</span>
+          </li>
+          <li class="group flex items-center gap-4 py-4 transition-colors hover:bg-card">
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center border border-brass/50 bg-brass-pale/50 text-forest transition-colors duration-300 group-hover:bg-brass group-hover:text-paper">
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <span class="text-[0.95rem] text-ink/80">Provision of executive programs</span>
+          </li>
+          <li class="group flex items-center gap-4 py-4 transition-colors hover:bg-card">
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center border border-brass/50 bg-brass-pale/50 text-forest transition-colors duration-300 group-hover:bg-brass group-hover:text-paper">
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <span class="text-[0.95rem] text-ink/80">Lowest tuition fees with the highest waivers</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="reveal mt-12" style="--reveal-delay:0.25s">
+        <div class="frame-arch relative">
+          <div class="relative z-10 aspect-[16/9] overflow-hidden">
+            <img src="images/students.jpg" alt="FCUB students walking across the campus lawn" class="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-forest-deep/55 to-transparent"></div>
+            <p class="absolute bottom-5 left-6 font-display text-lg text-paper italic">2,000+ learners, one campus, endless ambition.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Outcomes / Careers tabs -->
+    <div class="reveal lg:pl-6" style="--reveal-delay:0.1s">
+      <div class="flex h-full flex-col">
+        <div role="tablist" aria-label="Student outcomes and career opportunities" class="grid w-full grid-cols-2 border border-ink/10 bg-card">
+          <button type="button" role="tab" id="tab-outcomes" aria-selected="true" aria-controls="panel-outcomes" class="flex items-center justify-center gap-2.5 py-5 text-[0.72rem] font-semibold tracking-widest uppercase transition-colors duration-300 bg-forest text-paper">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg>
+            Student Outcomes
+          </button>
+          <button type="button" role="tab" id="tab-careers" aria-selected="false" aria-controls="panel-careers" class="flex items-center justify-center gap-2.5 py-5 text-[0.72rem] font-semibold tracking-widest uppercase transition-colors duration-300 text-ink/60 hover:bg-brass-pale/40 hover:text-forest">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/><circle cx="12" cy="12" r="10"/></svg>
+            Career Opportunities
+          </button>
+        </div>
+
+        <div class="flex flex-1 flex-col border border-t-0 border-ink/10 bg-card">
+          <div id="panel-outcomes" role="tabpanel" aria-labelledby="tab-outcomes" class="flex-1 animate-fade-up p-8 sm:p-10">
+            <h3 class="eyebrow text-[0.62rem] text-clay">Graduates leave with</h3>
+            <ul class="mt-6 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+              <li class="flex items-baseline gap-3 text-sm text-ink/80"><span class="font-display text-xs text-brass">01</span>Academic excellence</li>
+              <li class="flex items-baseline gap-3 text-sm text-ink/80"><span class="font-display text-xs text-brass">02</span>Professional integrity</li>
+              <li class="flex items-baseline gap-3 text-sm text-ink/80"><span class="font-display text-xs text-brass">03</span>Leadership development</li>
+              <li class="flex items-baseline gap-3 text-sm text-ink/80"><span class="font-display text-xs text-brass">04</span>Teamwork</li>
+              <li class="flex items-baseline gap-3 text-sm text-ink/80"><span class="font-display text-xs text-brass">05</span>Diversity, respect and equity</li>
+              <li class="flex items-baseline gap-3 text-sm text-ink/80"><span class="font-display text-xs text-brass">06</span>Creativity and innovation</li>
+              <li class="flex items-baseline gap-3 text-sm text-ink/80"><span class="font-display text-xs text-brass">07</span>Communication and networking</li>
+              <li class="flex items-baseline gap-3 text-sm text-ink/80"><span class="font-display text-xs text-brass">08</span>Research conduction</li>
+            </ul>
+            <div class="mt-9 border-t border-dashed border-ink/15 pt-7">
+              <p class="font-display text-lg text-forest italic">“Character, competence and the confidence to lead.”</p>
+            </div>
+          </div>
+
+          <div id="panel-careers" role="tabpanel" aria-labelledby="tab-careers" hidden class="flex-1 animate-fade-up p-8 sm:p-10">
+            <h3 class="eyebrow text-[0.62rem] text-clay">Graduates go on to</h3>
+            <ul class="mt-6 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+              <li class="flex items-baseline gap-3 text-sm text-ink/80"><span class="font-display text-xs text-brass">01</span>Govt. &amp; non-govt. organizations</li>
+              <li class="flex items-baseline gap-3 text-sm text-ink/80"><span class="font-display text-xs text-brass">02</span>Govt. &amp; non-govt. projects</li>
+              <li class="flex items-baseline gap-3 text-sm text-ink/80"><span class="font-display text-xs text-brass">03</span>Research project / project coordinator</li>
+              <li class="flex items-baseline gap-3 text-sm text-ink/80"><span class="font-display text-xs text-brass">04</span>Education and training</li>
+              <li class="flex items-baseline gap-3 text-sm text-ink/80"><span class="font-display text-xs text-brass">05</span>Research field / assistant</li>
+              <li class="flex items-baseline gap-3 text-sm text-ink/80"><span class="font-display text-xs text-brass">06</span>Human resources development (HRD)</li>
+              <li class="flex items-baseline gap-3 text-sm text-ink/80"><span class="font-display text-xs text-brass">07</span>Public relations specialist (PRS)</li>
+              <li class="flex items-baseline gap-3 text-sm text-ink/80"><span class="font-display text-xs text-brass">08</span>Social marketing / social work</li>
+            </ul>
+            <div class="mt-9 border-t border-dashed border-ink/15 pt-7">
+              <p class="font-display text-lg text-forest italic">“From lecture hall to leadership — the journey is designed.”</p>
+            </div>
+          </div>
+
+          <div class="border-t border-ink/10 bg-paper px-8 py-5 sm:px-10">
+            <p class="text-center text-[0.8rem] tracking-wide text-clay">
+              Outcomes tracked across all five faculties, every graduating class.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ Campus Life ═══════════════ -->
+<section id="campus-life" class="grain relative overflow-hidden bg-forest py-24 text-paper sm:py-32">
+  <div class="relative mx-auto max-w-7xl px-6">
+    <div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+      <div class="reveal">
+        <span class="eyebrow inline-flex items-center gap-3 text-brass"><span aria-hidden="true" class="h-px w-10 bg-brass"></span>Campus Life</span>
+        <h2 class="mt-5 max-w-xl font-display text-4xl leading-[1.08] font-medium tracking-tight sm:text-5xl">
+          Facilities Built for <span class="display-italic font-light text-brass-light">Serious Study</span>
+        </h2>
+      </div>
+      <div class="reveal" style="--reveal-delay:0.15s">
+        <p class="max-w-sm text-sm leading-relaxed text-paper/65">
+          A congenial, politics-free environment where the library,
+          laboratories and lawns all do one thing: help you become a leader.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-14 grid gap-6 md:grid-cols-3">
+      <div class="reveal">
+        <figure class="group relative overflow-hidden">
+          <div class="relative aspect-[4/3] overflow-hidden">
+            <img src="images/computer-lab.jpg" alt="The FCUB computer lab with rows of modern workstations" class="h-full w-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-forest-deep/90 via-forest-deep/20 to-transparent"></div>
+            <svg class="absolute top-4 right-4 h-5 w-5 text-brass-light opacity-0 transition-all duration-500 group-hover:translate-x-0 group-hover:opacity-100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </div>
+          <figcaption class="absolute inset-x-0 bottom-0 p-6">
+            <p class="eyebrow text-[0.58rem] text-brass-light">01 — Facilities</p>
+            <h3 class="mt-2 font-display text-2xl text-paper">Excellent Computer Labs</h3>
+            <p class="mt-2 max-w-xs text-sm leading-relaxed text-paper/70 opacity-0 transition-all duration-500 group-hover:opacity-100">Modern machines, high-speed network, hands-on practice every day.</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="reveal" style="--reveal-delay:0.12s">
+        <figure class="group relative overflow-hidden">
+          <div class="relative aspect-[4/3] overflow-hidden">
+            <img src="images/hero-campus.jpg" alt="The FCUB academic building framed by green lawns" class="h-full w-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-forest-deep/90 via-forest-deep/20 to-transparent"></div>
+            <svg class="absolute top-4 right-4 h-5 w-5 text-brass-light opacity-0 transition-all duration-500 group-hover:translate-x-0 group-hover:opacity-100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </div>
+          <figcaption class="absolute inset-x-0 bottom-0 p-6">
+            <p class="eyebrow text-[0.58rem] text-brass-light">02 — Facilities</p>
+            <h3 class="mt-2 font-display text-2xl text-paper">A Campus of Our Own</h3>
+            <p class="mt-2 max-w-xs text-sm leading-relaxed text-paper/70 opacity-0 transition-all duration-500 group-hover:opacity-100">Spacious, well-ventilated classrooms on a green, serene campus.</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="reveal" style="--reveal-delay:0.24s">
+        <figure class="group relative overflow-hidden">
+          <div class="relative aspect-[4/3] overflow-hidden">
+            <img src="images/graduation.jpg" alt="FCUB graduates celebrating at convocation" class="h-full w-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-forest-deep/90 via-forest-deep/20 to-transparent"></div>
+            <svg class="absolute top-4 right-4 h-5 w-5 text-brass-light opacity-0 transition-all duration-500 group-hover:translate-x-0 group-hover:opacity-100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </div>
+          <figcaption class="absolute inset-x-0 bottom-0 p-6">
+            <p class="eyebrow text-[0.58rem] text-brass-light">03 — Facilities</p>
+            <h3 class="mt-2 font-display text-2xl text-paper">Moments That Matter</h3>
+            <p class="mt-2 max-w-xs text-sm leading-relaxed text-paper/70 opacity-0 transition-all duration-500 group-hover:opacity-100">Cultural events, ceremonies and a community that celebrates you.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Notice strip -->
+    <div class="reveal" style="--reveal-delay:0.2s">
+      <p class="mt-14 border-t border-paper/15 pt-8 text-center text-sm text-paper/60">
+        The university observes weekly leave on <span class="font-semibold text-brass-light">Sunday &amp; Monday</span>. Administration remains reachable at +880 1983 278199.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ News & Events ═══════════════ -->
+<section id="notices" class="bg-paper py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
+      <div class="reveal max-w-2xl">
+        <span class="eyebrow inline-flex items-center gap-3 text-brass"><span aria-hidden="true" class="h-px w-10 bg-brass"></span>News &amp; Events</span>
+        <h2 class="mt-5 font-display text-4xl leading-[1.08] font-medium tracking-tight text-forest sm:text-5xl">
+          Always Something <span class="display-italic font-light text-brass">Happening</span>
+        </h2>
+      </div>
+      <div class="reveal" style="--reveal-delay:0.15s">
+        <a href="contact.html" class="group inline-flex items-center gap-2 border-b-2 border-forest pb-1.5 text-[0.78rem] font-semibold tracking-widest text-forest uppercase transition-colors hover:border-brass hover:text-brass">
+          All Announcements
+          <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div class="reveal h-full">
+        <article class="group flex h-full flex-col border border-ink/10 bg-card transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_28px_60px_rgba(8,33,26,0.14)]">
+          <div class="relative aspect-[16/10] overflow-hidden">
+            <img src="images/students.jpg" alt="Spring 2025 Admission Fair" class="h-full w-full object-cover transition-transform duration-[1.2s] group-hover:scale-105" />
+            <span class="absolute top-4 left-4 bg-brass px-3 py-1.5 text-[0.62rem] font-bold tracking-widest text-forest-deep uppercase">Admission</span>
+          </div>
+          <div class="flex flex-1 flex-col p-7">
+            <div class="flex flex-wrap items-center gap-x-5 gap-y-1.5 text-[0.72rem] tracking-wider text-clay uppercase">
+              <span class="flex items-center gap-1.5">
+                <svg class="h-3.5 w-3.5 text-brass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                20 Jan 2025
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg class="h-3.5 w-3.5 text-brass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                FCUB Main Campus, Chuadanga
+              </span>
+            </div>
+            <h3 class="mt-4 font-display text-[1.4rem] leading-snug text-forest transition-colors group-hover:text-brass">Spring 2025 Admission Fair</h3>
+            <p class="mt-3 flex-1 text-sm leading-relaxed text-ink/65">Meet faculty, tour the campus and learn about scholarship opportunities for high achievers.</p>
+          </div>
+        </article>
+      </div>
+      <div class="reveal h-full" style="--reveal-delay:0.1s">
+        <article class="group flex h-full flex-col border border-ink/10 bg-card transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_28px_60px_rgba(8,33,26,0.14)]">
+          <div class="relative aspect-[16/10] overflow-hidden">
+            <img src="images/computer-lab.jpg" alt="National Computing Competition" class="h-full w-full object-cover transition-transform duration-[1.2s] group-hover:scale-105" />
+            <span class="absolute top-4 left-4 bg-brass px-3 py-1.5 text-[0.62rem] font-bold tracking-widest text-forest-deep uppercase">Competition</span>
+          </div>
+          <div class="flex flex-1 flex-col p-7">
+            <div class="flex flex-wrap items-center gap-x-5 gap-y-1.5 text-[0.72rem] tracking-wider text-clay uppercase">
+              <span class="flex items-center gap-1.5">
+                <svg class="h-3.5 w-3.5 text-brass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                14 Feb 2025
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg class="h-3.5 w-3.5 text-brass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                Computer Lab Complex
+              </span>
+            </div>
+            <h3 class="mt-4 font-display text-[1.4rem] leading-snug text-forest transition-colors group-hover:text-brass">National Computing Competition</h3>
+            <p class="mt-3 flex-1 text-sm leading-relaxed text-ink/65">Inter-university programming and problem-solving contest hosted by the Department of CSE.</p>
+          </div>
+        </article>
+      </div>
+      <div class="reveal h-full" style="--reveal-delay:0.2s">
+        <article class="group flex h-full flex-col border border-ink/10 bg-card transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_28px_60px_rgba(8,33,26,0.14)]">
+          <div class="relative aspect-[16/10] overflow-hidden">
+            <img src="images/graduation.jpg" alt="Career &amp; Networking Day" class="h-full w-full object-cover transition-transform duration-[1.2s] group-hover:scale-105" />
+            <span class="absolute top-4 left-4 bg-brass px-3 py-1.5 text-[0.62rem] font-bold tracking-widest text-forest-deep uppercase">Career</span>
+          </div>
+          <div class="flex flex-1 flex-col p-7">
+            <div class="flex flex-wrap items-center gap-x-5 gap-y-1.5 text-[0.72rem] tracking-wider text-clay uppercase">
+              <span class="flex items-center gap-1.5">
+                <svg class="h-3.5 w-3.5 text-brass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                5 Mar 2025
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg class="h-3.5 w-3.5 text-brass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                Auditorium
+              </span>
+            </div>
+            <h3 class="mt-4 font-display text-[1.4rem] leading-snug text-forest transition-colors group-hover:text-brass">Career &amp; Networking Day</h3>
+            <p class="mt-3 flex-1 text-sm leading-relaxed text-ink/65">Top employers from government and non-government organizations recruit FCUB graduates on campus.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ Admission CTA band ═══════════════ -->
+<section class="relative overflow-hidden" aria-label="Admission call to action">
+  <div class="absolute inset-0">
+    <img src="images/students.jpg" alt="" role="presentation" class="absolute inset-0 h-full w-full object-cover object-center" />
+    <div class="absolute inset-0 bg-forest-deep/85"></div>
+  </div>
+
+  <div class="relative mx-auto max-w-4xl px-6 py-24 text-center sm:py-28">
+    <div class="reveal">
+      <p class="eyebrow justify-center text-brass-light">
+        Admission Open — Bachelor &amp; Master Programs
+      </p>
+    </div>
+    <div class="reveal" style="--reveal-delay:0.1s">
+      <h2 class="mt-6 font-display text-4xl leading-[1.06] font-medium tracking-tight text-paper sm:text-6xl">
+        Be a FCUB Graduate. <span class="display-italic font-light text-brass-light">Lead the way.</span>
+      </h2>
+    </div>
+    <div class="reveal" style="--reveal-delay:0.2s">
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+        <a href="contact.html" class="group inline-flex items-center gap-3 bg-brass px-8 py-4 text-[0.8rem] font-semibold tracking-widest text-forest-deep uppercase transition-all duration-300 hover:bg-brass-light">
+          Start Your Application
+          <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+8801983278199" class="inline-flex items-center gap-3 border border-paper/30 px-8 py-4 text-[0.8rem] font-semibold tracking-widest text-paper uppercase transition-all duration-300 hover:border-paper hover:bg-paper/10">
+          Call +880 1983 278199
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ Contact ═══════════════ -->
+<section id="contact" class="bg-paper-deep py-24 sm:py-32">
+  <div class="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-12">
+    <!-- Info -->
+    <div class="lg:col-span-5">
+      <div class="reveal">
+        <span class="eyebrow inline-flex items-center gap-3 text-brass"><span aria-hidden="true" class="h-px w-10 bg-brass"></span>Contact</span>
+        <h2 class="mt-5 font-display text-4xl leading-[1.08] font-medium tracking-tight text-forest sm:text-5xl">
+          Let&rsquo;s <span class="display-italic font-light text-brass">Talk</span>
+        </h2>
+        <p class="mt-5 max-w-md leading-relaxed text-ink/70">
+          Questions about admission, fees or scholarships? Write to us —
+          the admission office replies promptly.
+        </p>
+      </div>
+
+      <div class="reveal" style="--reveal-delay:0.15s">
+        <ul class="mt-10 space-y-6">
+          <li class="flex gap-4">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center border border-brass/40 bg-card text-forest">
+              <svg class="h-4.5 w-4.5 text-brass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+            </span>
+            <div>
+              <p class="eyebrow text-[0.58rem] text-clay">Phone</p>
+              <a href="tel:+8801983278199" class="mt-1 block text-[0.95rem] font-medium text-forest transition-colors hover:text-brass">+880 1983 278199</a>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center border border-brass/40 bg-card text-forest">
+              <svg class="h-4.5 w-4.5 text-brass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+            </span>
+            <div>
+              <p class="eyebrow text-[0.58rem] text-clay">Email</p>
+              <a href="mailto:info@fcub.edu.bd" class="mt-1 block text-[0.95rem] font-medium text-forest transition-colors hover:text-brass">info@fcub.edu.bd</a>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center border border-brass/40 bg-card text-forest">
+              <svg class="h-4.5 w-4.5 text-brass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <div>
+              <p class="eyebrow text-[0.58rem] text-clay">Campus</p>
+              <p class="mt-1 max-w-sm text-[0.95rem] leading-snug font-medium text-forest">Ghoramara, Alamdanga Road, Chuadanga Pourashava, Chuadanga-7200, Bangladesh</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center border border-brass/40 bg-card text-forest">
+              <svg class="h-4.5 w-4.5 text-brass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="10"/></svg>
+            </span>
+            <div>
+              <p class="eyebrow text-[0.58rem] text-clay">Office Hours</p>
+              <p class="mt-1 max-w-sm text-[0.95rem] leading-snug font-medium text-forest">Tuesday – Saturday · Weekly leave: Sunday &amp; Monday</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="reveal lg:col-span-7" style="--reveal-delay:0.1s">
+      <form id="contact-form" novalidate class="border border-ink/10 bg-card p-8 shadow-[0_24px_60px_rgba(8,33,26,0.07)] sm:p-10">
+        <p class="eyebrow text-[0.62rem] text-clay">Admission Inquiry Form</p>
+        <h3 class="mt-3 font-display text-2xl text-forest">
+          Request information — we&rsquo;ll get back to you.
+        </h3>
+
+        <div class="mt-8 grid gap-6 sm:grid-cols-2">
+          <div class="space-y-2">
+            <label for="name" class="text-xs font-medium tracking-wider text-ink/70 uppercase">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" class="h-12 w-full border border-ink/15 bg-paper px-4 text-sm text-ink transition placeholder:text-ink/40 focus:border-brass focus:outline-none focus:ring-2 focus:ring-brass/25" required />
+          </div>
+          <div class="space-y-2">
+            <label for="email" class="text-xs font-medium tracking-wider text-ink/70 uppercase">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" class="h-12 w-full border border-ink/15 bg-paper px-4 text-sm text-ink transition placeholder:text-ink/40 focus:border-brass focus:outline-none focus:ring-2 focus:ring-brass/25" required />
+          </div>
+          <div class="space-y-2">
+            <label for="phone" class="text-xs font-medium tracking-wider text-ink/70 uppercase">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="+880 1XXX XXXXXX" class="h-12 w-full border border-ink/15 bg-paper px-4 text-sm text-ink transition placeholder:text-ink/40 focus:border-brass focus:outline-none focus:ring-2 focus:ring-brass/25" required />
+          </div>
+          <div class="space-y-2">
+            <label for="program" class="text-xs font-medium tracking-wider text-ink/70 uppercase">Program of Interest</label>
+            <div class="relative">
+              <select id="program" name="program" required class="h-12 w-full border border-ink/15 bg-paper px-4 text-sm text-ink transition placeholder:text-ink/40 focus:border-brass focus:outline-none focus:ring-2 focus:ring-brass/25 appearance-none pr-10 text-ink/40">
+                <option value="" disabled selected>Select a department</option>
+                <option value="CSE">CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="Public Health">Public Health</option>
+                <option value="Law">Law</option>
+                <option value="Business Administration">Business Administration</option>
+                <option value="English">English</option>
+                <option value="Sociology">Sociology</option>
+                <option value="Agriculture">Agriculture</option>
+              </select>
+              <svg class="pointer-events-none absolute top-1/2 right-3.5 h-4 w-4 -translate-y-1/2 text-clay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
+          </div>
+          <div class="space-y-2 sm:col-span-2">
+            <label for="message" class="text-xs font-medium tracking-wider text-ink/70 uppercase">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us what you'd like to know — tuition, waivers, schedules…" class="h-12 w-full border border-ink/15 bg-paper px-4 text-sm text-ink transition placeholder:text-ink/40 focus:border-brass focus:outline-none focus:ring-2 focus:ring-brass/25 h-auto resize-none py-3" required></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="group mt-8 inline-flex w-full items-center justify-center gap-3 bg-forest px-8 py-4 text-[0.8rem] font-semibold tracking-widest text-paper uppercase transition-all duration-300 hover:bg-forest-deep disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto">
+          Send Inquiry
+          <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+        </button>
+      </form>
+
+      <!-- Success panel — revealed by js/main.js after submit -->
+      <div id="contact-success" hidden role="status" class="border border-forest/25 bg-forest/5 p-8 sm:p-10">
+        <span class="flex h-12 w-12 items-center justify-center border border-brass/40 bg-brass-pale/40">
+          <svg class="h-6 w-6 text-brass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
+        </span>
+        <p class="eyebrow mt-6 text-[0.62rem] text-brass">Admission Office</p>
+        <h3 class="mt-3 font-display text-3xl leading-tight text-forest">Message received</h3>
+        <p class="mt-4 max-w-md leading-relaxed text-ink/70">
+          Thank you — the FCUB admission office will reach out to you shortly.
+          For anything urgent, call <a href="tel:+8801983278199" class="font-medium text-forest underline decoration-brass/50 underline-offset-2 transition-colors hover:text-brass">+880 1983 278199</a>
+          or email <a href="mailto:info@fcub.edu.bd" class="font-medium text-forest underline decoration-brass/50 underline-offset-2 transition-colors hover:text-brass">info@fcub.edu.bd</a>.
+        </p>
+        <button id="contact-again" type="button" class="group mt-8 inline-flex min-h-11 items-center gap-2 bg-forest px-6 text-[0.72rem] font-semibold tracking-widest text-paper uppercase transition-colors duration-300 hover:bg-forest-deep">
+          Send another message
+          <svg class="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════════ FCUB FOOTER (shared partial) ═══════════════ -->
+<footer class="mt-auto bg-forest-deep text-paper">
+  <div class="mx-auto max-w-7xl px-6 pt-20 pb-12">
+    <div class="grid gap-12 lg:grid-cols-12">
+      <!-- Brand -->
+      <div class="lg:col-span-4">
+        <div class="flex items-center gap-3">
+          <svg viewBox="0 0 64 72" fill="none" aria-hidden="true" class="h-12 w-auto text-brass-light">
+            <path d="M32 2 L58 11 V38 C58 54 47 63 32 70 C17 63 6 54 6 38 V11 Z" fill="currentColor" opacity="0.08"/>
+            <path d="M32 2 L58 11 V38 C58 54 47 63 32 70 C17 63 6 54 6 38 V11 Z" stroke="currentColor" stroke-width="2"/>
+            <path d="M32 7 L54 15 V37.5 C54 51 44.5 59 32 65.5 C19.5 59 10 51 10 37.5 V15 Z" stroke="currentColor" stroke-width="0.75" opacity="0.55"/>
+            <text x="32" y="36" text-anchor="middle" fill="currentColor" style="font-family:'Fraunces',Georgia,serif;font-size:15px;font-weight:600;letter-spacing:1px">FCUB</text>
+            <path d="M20 44 H44" stroke="currentColor" stroke-width="1.25" opacity="0.8"/>
+            <path d="M26 49 H38" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+            <text x="32" y="58" text-anchor="middle" fill="currentColor" opacity="0.75" style="font-family:'Inter',sans-serif;font-size:5px;letter-spacing:2px">CHUADANGA</text>
+          </svg>
+          <div class="leading-tight">
+            <p class="font-display text-xl font-semibold">First Capital University</p>
+            <p class="eyebrow mt-1 text-[0.55rem] text-paper/50">of Bangladesh · Chuadanga</p>
+          </div>
+        </div>
+        <p class="mt-6 max-w-sm text-sm leading-relaxed text-paper/60">
+          The first private university in Khulna Division — five faculties,
+          eight departments and a politics-free campus where our learners
+          become leaders.
+        </p>
+        <ul class="mt-7 space-y-3 text-sm text-paper/75">
+          <li class="flex items-center gap-3">
+            <svg class="h-4 w-4 text-brass-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+            <a href="tel:+8801983278199" class="transition-colors hover:text-brass-light">+880 1983 278199</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <svg class="h-4 w-4 text-brass-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+            <a href="mailto:info@fcub.edu.bd" class="transition-colors hover:text-brass-light">info@fcub.edu.bd</a>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-brass-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Ghoramara, Alamdanga Road, Chuadanga Pourashava, Chuadanga-7200, Bangladesh</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Academics — overview + the eight department pages -->
+      <nav aria-label="Academics" class="lg:col-span-4">
+        <h3 class="eyebrow text-[0.62rem] text-brass-light">Academics</h3>
+        <ul class="mt-6 space-y-2.5">
+          <li><a href="academics.html" class="text-sm font-medium text-paper/85 transition-colors hover:text-brass-light">Faculties &amp; Departments Overview</a></li>
+          <li><a href="academics-cse.html" class="text-sm text-paper/60 transition-colors hover:text-paper">Computer Science &amp; Engineering</a></li>
+          <li><a href="academics-eee.html" class="text-sm text-paper/60 transition-colors hover:text-paper">Electrical &amp; Electronic Engineering</a></li>
+          <li><a href="academics-bba.html" class="text-sm text-paper/60 transition-colors hover:text-paper">Business Administration</a></li>
+          <li><a href="academics-public-health.html" class="text-sm text-paper/60 transition-colors hover:text-paper">Public Health</a></li>
+          <li><a href="academics-law.html" class="text-sm text-paper/60 transition-colors hover:text-paper">Law</a></li>
+          <li><a href="academics-english.html" class="text-sm text-paper/60 transition-colors hover:text-paper">English</a></li>
+          <li><a href="academics-sociology.html" class="text-sm text-paper/60 transition-colors hover:text-paper">Sociology</a></li>
+          <li><a href="academics-agriculture.html" class="text-sm text-paper/60 transition-colors hover:text-paper">Agriculture</a></li>
+        </ul>
+      </nav>
+
+      <!-- University — the remaining primary pages -->
+      <nav aria-label="University" class="lg:col-span-4">
+        <h3 class="eyebrow text-[0.62rem] text-brass-light">University</h3>
+        <ul class="mt-6 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+          <li><a href="about.html" class="text-sm text-paper/60 transition-colors hover:text-paper">About the University</a></li>
+          <li><a href="leadership.html" class="text-sm text-paper/60 transition-colors hover:text-paper">Leadership &amp; Governance</a></li>
+          <li><a href="campus-life.html" class="text-sm text-paper/60 transition-colors hover:text-paper">Campus Life</a></li>
+          <li><a href="admissions.html" class="text-sm text-paper/60 transition-colors hover:text-paper">Admissions</a></li>
+          <li><a href="notices.html" class="text-sm text-paper/60 transition-colors hover:text-paper">Notices &amp; Circulars</a></li>
+          <li><a href="events.html" class="text-sm text-paper/60 transition-colors hover:text-paper">University Events</a></li>
+          <li><a href="result.html" class="text-sm text-paper/60 transition-colors hover:text-paper">Result &amp; Verification</a></li>
+          <li><a href="contact.html" class="text-sm text-paper/60 transition-colors hover:text-paper">Contact</a></li>
+        </ul>
+        <div class="mt-8 border border-paper/15 p-5">
+          <p class="font-display text-sm text-paper/85 italic">&ldquo;Where our learners become leaders.&rdquo;</p>
+          <p class="eyebrow mt-2 text-[0.55rem] text-paper/40">The FCUB Promise</p>
+        </div>
+        <a href="result.html" class="mt-5 inline-flex items-center gap-2 text-[0.72rem] font-semibold tracking-widest text-brass-light uppercase transition-colors hover:text-paper">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>
+          Verify a Certificate
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="border-t border-paper/10">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-6 text-xs text-paper/45 sm:flex-row">
+      <p>© <span data-year>2026</span> First Capital University of Bangladesh. All rights reserved.</p>
+      <p class="tracking-wider uppercase">Education for Excellence — Chuadanga, Khulna Division</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
