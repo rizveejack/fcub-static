@@ -28,20 +28,34 @@
     if (open) {
       /* reset any open accordion when the drawer opens */
       menu.querySelectorAll("[aria-expanded='true']").forEach(function (b) {
-        if (b.classList.contains("acc-trigger")) b.setAttribute("aria-expanded", "false");
+        if (b.classList.contains("acc-trigger"))
+          b.setAttribute("aria-expanded", "false");
       });
     }
   }
-  if (openBtn) openBtn.addEventListener("click", function () { setMenu(true); });
-  if (closeBtn) closeBtn.addEventListener("click", function () { setMenu(false); });
+  if (openBtn)
+    openBtn.addEventListener("click", function () {
+      setMenu(true);
+    });
+  if (closeBtn)
+    closeBtn.addEventListener("click", function () {
+      setMenu(false);
+    });
   if (menu) {
-    menu.querySelector(".mobile-overlay").addEventListener("click", function () { setMenu(false); });
+    menu
+      .querySelector(".mobile-overlay")
+      .addEventListener("click", function () {
+        setMenu(false);
+      });
     /* close after choosing any real link */
     menu.querySelectorAll("a[href]").forEach(function (a) {
-      a.addEventListener("click", function () { setMenu(false); });
+      a.addEventListener("click", function () {
+        setMenu(false);
+      });
     });
     document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && menu.classList.contains("is-open")) setMenu(false);
+      if (e.key === "Escape" && menu.classList.contains("is-open"))
+        setMenu(false);
     });
   }
 
@@ -52,9 +66,11 @@
       /* exclusive behaviour when the group opts in */
       var group = btn.closest("[data-acc-group]");
       if (group && !expanded) {
-        group.querySelectorAll("[aria-expanded='true']").forEach(function (other) {
-          other.setAttribute("aria-expanded", "false");
-        });
+        group
+          .querySelectorAll("[aria-expanded='true']")
+          .forEach(function (other) {
+            other.setAttribute("aria-expanded", "false");
+          });
       }
       btn.setAttribute("aria-expanded", expanded ? "false" : "true");
     });
@@ -72,11 +88,15 @@
           }
         });
       },
-      { rootMargin: "0px 0px -80px 0px" }
+      { rootMargin: "0px 0px -80px 0px" },
     );
-    reveals.forEach(function (el) { io.observe(el); });
+    reveals.forEach(function (el) {
+      io.observe(el);
+    });
   } else {
-    reveals.forEach(function (el) { el.classList.add("is-visible"); });
+    reveals.forEach(function (el) {
+      el.classList.add("is-visible");
+    });
   }
 
   /* ── 5. Notices department filter (home board + notices page) ── */
@@ -96,27 +116,37 @@
       var matching = 0;
       var shown = 0;
       rows.forEach(function (row) {
-        var hit = filter === "all" || row.getAttribute("data-dept-row") === filter;
+        var hit =
+          filter === "all" || row.getAttribute("data-dept-row") === filter;
         if (hit) matching++;
         var visible = hit && (max === 0 || shown < max);
         row.hidden = !visible;
         if (visible) shown++;
       });
       chips.forEach(function (chip) {
-        chip.setAttribute("aria-pressed", chip.getAttribute("data-filter") === filter ? "true" : "false");
+        chip.setAttribute(
+          "aria-pressed",
+          chip.getAttribute("data-filter") === filter ? "true" : "false",
+        );
       });
       if (countEl) countEl.textContent = String(shown);
       if (totalEl) totalEl.textContent = String(matching);
       if (emptyEl) emptyEl.hidden = shown !== 0;
       if (list) list.hidden = shown === 0;
       if (labelEl) {
-        var chip = group.querySelector(".filter-chip[data-filter='" + filter + "']");
-        labelEl.textContent = chip ? (chip.getAttribute("data-label") || chip.textContent.trim()) : "the board";
+        var chip = group.querySelector(
+          ".filter-chip[data-filter='" + filter + "']",
+        );
+        labelEl.textContent = chip
+          ? chip.getAttribute("data-label") || chip.textContent.trim()
+          : "the board";
       }
     }
 
     chips.forEach(function (chip) {
-      chip.addEventListener("click", function () { apply(chip.getAttribute("data-filter")); });
+      chip.addEventListener("click", function () {
+        apply(chip.getAttribute("data-filter"));
+      });
     });
   });
 
@@ -129,10 +159,21 @@
     var area = document.getElementById("result-area");
     var idleTpl = document.getElementById("result-idle");
 
-    var norm = function (s) { return String(s || "").trim().replace(/\s+/g, "").toUpperCase(); };
+    var norm = function (s) {
+      return String(s || "")
+        .trim()
+        .replace(/\s+/g, "")
+        .toUpperCase();
+    };
     var esc = function (s) {
       return String(s).replace(/[&<>"']/g, function (c) {
-        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+        return {
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#39;",
+        }[c];
       });
     };
 
@@ -140,7 +181,9 @@
       area.innerHTML = "";
       if (idleTpl) {
         area.appendChild(idleTpl.content.cloneNode(true));
-        area.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("is-visible"); });
+        area.querySelectorAll(".reveal").forEach(function (el) {
+          el.classList.add("is-visible");
+        });
       }
     }
 
@@ -149,7 +192,9 @@
         '<div class="flex animate-fade-up flex-col items-center border border-ink/10 bg-card px-8 py-16 text-center">' +
         '<svg class="h-8 w-8 animate-spin text-brass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>' +
         '<p class="eyebrow mt-6 text-[0.62rem] text-clay">Consulting the Register</p>' +
-        '<p class="mt-2 font-display text-xl text-forest">Checking roll&nbsp;<span class="tracking-[0.1em]">' + esc(roll) + '</span>&nbsp;…</p>' +
+        '<p class="mt-2 font-display text-xl text-forest">Checking roll&nbsp;<span class="tracking-[0.1em]">' +
+        esc(roll) +
+        "</span>&nbsp;…</p>" +
         "</div>";
     }
 
@@ -173,16 +218,24 @@
     function cell(label, valueHtml) {
       return (
         '<div class="bg-card px-6 py-5">' +
-        '<p class="eyebrow text-[0.55rem] text-clay">' + label + "</p>" +
-        '<div class="mt-2 font-display text-[1.05rem] leading-snug text-forest">' + valueHtml + "</div></div>"
+        '<p class="eyebrow text-[0.55rem] text-clay">' +
+        label +
+        "</p>" +
+        '<div class="mt-2 font-display text-[1.05rem] leading-snug text-forest">' +
+        valueHtml +
+        "</div></div>"
       );
     }
 
     function showFound(r) {
       var stamp = new Intl.DateTimeFormat("en-GB", {
         timeZone: "Asia/Dhaka",
-        day: "numeric", month: "long", year: "numeric",
-        hour: "2-digit", minute: "2-digit", hour12: true,
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true,
       }).format(new Date());
 
       area.innerHTML =
@@ -196,7 +249,9 @@
         '<p class="flex items-center gap-2.5 text-[0.7rem] font-bold tracking-[0.2em] text-paper uppercase">' +
         '<svg class="h-4.5 w-4.5 text-brass-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>' +
         "Record verified — authentic</p>" +
-        '<p class="text-[0.65rem] tracking-wider text-paper/60 uppercase">Checked ' + stamp + " (Dhaka)</p></div>" +
+        '<p class="text-[0.65rem] tracking-wider text-paper/60 uppercase">Checked ' +
+        stamp +
+        " (Dhaka)</p></div>" +
         '<div class="relative px-6 pt-12 pb-8 text-center sm:px-10">' +
         '<svg viewBox="0 0 64 72" fill="none" aria-hidden="true" class="mx-auto h-16 w-auto text-forest">' +
         '<path d="M32 2 L58 11 V38 C58 54 47 63 32 70 C17 63 6 54 6 38 V11 Z" fill="currentColor" opacity="0.08"/>' +
@@ -211,17 +266,32 @@
         '<div class="mt-4 flex items-center justify-center gap-3" aria-hidden="true"><span class="h-px w-14 bg-brass/50"></span>' +
         '<svg class="h-4 w-4 text-brass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3.072"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m6.69 16.479 1.29 4.88a.5.5 0 0 1-.698.591l-1.843-.849a1 1 0 0 0-.88.001l-1.846.85a.5.5 0 0 1-.693-.593l1.29-4.88"/><circle cx="5" cy="14" r="3"/></svg>' +
         '<span class="h-px w-14 bg-brass/50"></span></div>' +
-        '<p class="mt-6 font-display text-3xl leading-tight text-forest italic sm:text-4xl">' + esc(r.name) + "</p></div>" +
-        '<div class="relative mx-6 mb-6 grid grid-cols-1 gap-px bg-ink/10 sm:mx-10 sm:grid-cols-3">' +
-        cell("Examination Roll", '<span class="font-mono text-[0.95rem] tracking-[0.08em]">' + esc(r.roll) + "</span>") +
+        '<p class="mt-6 font-display text-3xl leading-tight text-forest italic sm:text-4xl">' +
+        esc(r.name) +
+        "</p></div>" +
+        '<div class="relative mx-6 mb-6 grid grid-cols-1 gap-px sm:mx-10 sm:grid-cols-3">' +
+        cell(
+          "Examination Roll",
+          '<span class="font-mono text-[0.95rem] tracking-[0.08em]">' +
+            esc(r.roll) +
+            "</span>",
+        ) +
         cell("Certificate No.", esc(r.certificateNo)) +
         cell("Session", esc(r.session)) +
-        cell("Programme", esc(r.program)).replace('bg-card px-6 py-5', 'bg-card px-6 py-5 sm:col-span-3') +
+        cell("Programme", esc(r.program)).replace(
+          "bg-card px-6 py-5",
+          "bg-card px-6 py-5 sm:col-span-3",
+        ) +
         cell("Department", esc(r.department)) +
         cell("Faculty", esc(r.faculty)) +
         cell("Final Examination", esc(r.examHeld)) +
         cell("Result Declared", esc(r.resultClass)) +
-        cell("CGPA", '<span class="text-2xl">' + Number(r.cgpa).toFixed(2) + '</span><span class="ml-1 font-sans text-sm text-clay">/ 4.00</span>') +
+        cell(
+          "CGPA",
+          '<span class="text-2xl">' +
+            Number(r.cgpa).toFixed(2) +
+            '</span><span class="ml-1 font-sans text-sm text-clay">/ 4.00</span>',
+        ) +
         cell("Year of Passing", esc(r.passingYear)) +
         "</div>" +
         '<div class="relative flex flex-col items-center justify-between gap-4 border-t border-ink/10 bg-paper-deep/60 px-6 py-5 sm:flex-row sm:px-10">' +
@@ -235,7 +305,9 @@
         '<svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>' +
         "Verify another</button></div></div></article>";
 
-      area.querySelector("[data-print]").addEventListener("click", function () { window.print(); });
+      area.querySelector("[data-print]").addEventListener("click", function () {
+        window.print();
+      });
       area.querySelector("[data-reset]").addEventListener("click", reset);
     }
 
@@ -255,9 +327,13 @@
       loadingTimer = window.setTimeout(function () {
         var hit = null;
         for (var i = 0; i < results.length; i++) {
-          if (norm(results[i].roll) === norm(q)) { hit = results[i]; break; }
+          if (norm(results[i].roll) === norm(q)) {
+            hit = results[i];
+            break;
+          }
         }
-        if (hit) showFound(hit); else showMissing(q);
+        if (hit) showFound(hit);
+        else showMissing(q);
       }, 700);
     }
 
